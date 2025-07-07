@@ -53,9 +53,9 @@ export default function Header() {
             <Image
               src="/images/auxgens-new-logo.png"
               alt="Auxgens"
-              width={280}
-              height={200}
-              className="h-20 w-auto lg:h-24"
+              width={320}
+              height={240}
+              className="h-24 w-auto lg:h-28"
             />
           </Link>
 

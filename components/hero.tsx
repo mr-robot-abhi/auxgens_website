@@ -13,7 +13,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative flex items-center justify-center pt-28 pb-16">
+    <section className="relative flex items-center justify-center pt-48 pb-16">
       {/* Floating security icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <Shield className="absolute top-20 left-10 w-8 h-8 text-green-500/20 animate-pulse" />
