@@ -35,8 +35,8 @@ export default function PlatformEcosystem() {
       <div className="relative z-10">
         <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Auxgens <span className="text-green-400">Cybersecurity Platform</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            Auxgens <span className="text-green-600 dark:text-green-400">Cybersecurity Platform</span>
           </h2>
         </div>
         <br />
@@ -45,7 +45,7 @@ export default function PlatformEcosystem() {
           <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox={`0 0 ${viewBoxWidth} ${viewBoxHeight}`} preserveAspectRatio="xMidYMid meet">
             <defs>
               <filter id="glow">
-                <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                <feGaussianBlur stdDeviation="1.5" result="coloredBlur" />
                 <feMerge>
                   <feMergeNode in="coloredBlur" />
                   <feMergeNode in="SourceGraphic" />
@@ -56,15 +56,15 @@ export default function PlatformEcosystem() {
             {items.map((item) => {
               const { x, y } = getPosition(item.angle, item.radius)
               return (
-                <line key={`line-${item.id}`} x1={centerX} y1={centerY} x2={centerX + x} y2={centerY + y} stroke="rgba(34, 197, 94, 0.6)" strokeWidth="1.5" filter="url(#glow)" style={{ opacity: hoveredItem === item.id ? 1 : 0.5, transition: 'opacity 0.3s ease-in-out' }} />
+                <line key={`line-${item.id}`} x1={centerX} y1={centerY} x2={centerX + x} y2={centerY + y} stroke="rgba(34, 197, 94, 0.8)" strokeWidth="1.5" filter="url(#glow)" style={{ opacity: hoveredItem === item.id ? 1 : 0.6, transition: 'opacity 0.3s ease-in-out' }} />
               )
             })}
 
-            <circle cx={centerX} cy={centerY} r="60" fill="none" stroke="rgba(34, 197, 94, 0.3)" strokeWidth="1.5" />
-            <circle cx={centerX} cy={centerY} r="90" fill="none" stroke="rgba(34, 197, 94, 0.2)" strokeWidth="1.5" />
+            <circle cx={centerX} cy={centerY} r="60" fill="none" stroke="rgba(34, 197, 94, 0.4)" strokeWidth="1.5" />
+            <circle cx={centerX} cy={centerY} r="90" fill="none" stroke="rgba(34, 197, 94, 0.3)" strokeWidth="1.5" />
           </svg>
 
-          <div className="absolute z-10 w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-green-400/50 shadow-2xl bg-gradient-to-br from-gray-800 to-gray-900 scale-100 hover:scale-105 transition-transform duration-700 ease-in-out"
+          <div className="absolute z-10 w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-green-500/60 dark:border-green-400/50 shadow-2xl bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 scale-100 hover:scale-105 transition-transform duration-700 ease-in-out"
             style={{ left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}>
             <Image
               src="/images/auxgens-green.png"
@@ -81,18 +81,18 @@ export default function PlatformEcosystem() {
               <div key={item.id} className="absolute z-20 animate-fade-in-up" style={{ left: `calc(50% + ${x}px)`, top: `calc(50% + ${y}px)`, transform: 'translate(-50%, -50%)', width: '180px' }} onMouseEnter={() => setHoveredItem(item.id as string)} onMouseLeave={() => setHoveredItem(null)}>
                 <Link href={item.href}>
                   <div className="relative group cursor-pointer">
-                    <div className={`absolute inset-0 bg-gradient-to-r ${item.color} rounded-xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-300`} />
-                    <div className="relative bg-gray-800/90 backdrop-blur-sm border border-gray-700/50 rounded-xl p-4 w-full group-hover:border-green-400/50 transition-all duration-300">
+                    <div className={`absolute inset-0 bg-gradient-to-r ${item.color} rounded-xl blur-lg opacity-30 dark:opacity-50 group-hover:opacity-50 dark:group-hover:opacity-75 transition-opacity duration-300`} />
+                    <div className="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-xl p-4 w-full group-hover:border-green-500/50 dark:group-hover:border-green-400/50 transition-all duration-300">
                       <div className="flex items-center space-x-3 mb-3">
                         <div className={`p-2 rounded-lg bg-gradient-to-r ${item.color}`}>
                           <Icon className="w-5 h-5 text-white" />
                         </div>
                         <div>
-                          <h4 className="font-semibold text-white text-sm">{item.name}</h4>
+                          <h4 className="font-semibold text-gray-900 dark:text-white text-sm">{item.name}</h4>
                         </div>
                       </div>
-                      <p className="text-gray-400 text-xs mb-3">{item.description}</p>
-                      <div className="flex items-center text-green-400 text-xs font-medium">
+                      <p className="text-gray-500 dark:text-gray-400 text-xs mb-3">{item.description}</p>
+                      <div className="flex items-center text-green-600 dark:text-green-400 text-xs font-medium">
                         {item.href.includes('/solutions/') ? 'Explore' : 'Learn More'} <ChevronRight className="w-3 h-3 ml-1" />
                       </div>
                     </div>

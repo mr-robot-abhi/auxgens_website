@@ -59,19 +59,19 @@ export default function DetailedServices() {
             return (
               <div
                 key={index}
-                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 flex flex-col h-full transition-all duration-300 hover:border-green-400/50 hover:shadow-2xl hover:shadow-green-500/10"
+                className="bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-xl p-6 flex flex-col h-full transition-all duration-300 hover:border-green-500/50 dark:hover:border-green-400/50 hover:shadow-2xl hover:shadow-green-500/10"
               >
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="p-3 rounded-lg bg-gradient-to-r from-green-600 to-green-500">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-white">{service.title}</h3>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">{service.title}</h3>
                 </div>
-                <p className="text-gray-300 mb-4 flex-grow">{service.description}</p>
-                <ul className="space-y-2 mb-6 text-gray-400">
+                <p className="text-gray-600 dark:text-gray-300 mb-4 flex-grow">{service.description}</p>
+                <ul className="space-y-2 mb-6 text-gray-500 dark:text-gray-400">
                   {service.points.map((point, i) => (
                     <li key={i} className="flex items-center">
-                      <ChevronRight className="w-4 h-4 text-green-400 mr-2 flex-shrink-0" />
+                      <ChevronRight className="w-4 h-4 text-green-600 dark:text-green-400 mr-2 flex-shrink-0" />
                       <span>{point}</span>
                     </li>
                   ))}
@@ -80,7 +80,7 @@ export default function DetailedServices() {
                   <Link href={service.href}>
                     <Button
                       variant="outline"
-                      className="w-full border-green-400/50 text-green-400 hover:bg-green-400/10 hover:text-green-300 hover:border-green-400"
+                      className="w-full border-green-500/50 dark:border-green-400/50 text-green-600 dark:text-green-400 hover:bg-green-500/10 dark:hover:bg-green-400/10 hover:text-green-700 dark:hover:text-green-300 hover:border-green-500 dark:hover:border-green-400"
                     >
                       Learn More
                     </Button>
