@@ -75,7 +75,6 @@ export default function Header() {
                   <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
                 <div
-                  className={`absolute top-full left-0 mt-2 w-64 bg-gray-800/95 backdrop-blur-md rounded-lg shadow-lg border border-gray-700 transition-all duration-200 ${
                   className={`absolute top-full left-0 mt-2 w-64 bg-white/95 dark:bg-gray-800/95 backdrop-blur-md rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-200 ${
                     isServicesOpen ? "opacity-100 visible" : "opacity-0 invisible"
                   }`}
@@ -105,7 +104,6 @@ export default function Header() {
                   <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
                 <div
-                  className={`absolute top-full left-0 mt-2 w-48 bg-gray-800/95 backdrop-blur-md rounded-lg shadow-lg border border-gray-700 transition-all duration-200 ${
                   className={`absolute top-full left-0 mt-2 w-48 bg-white/95 dark:bg-gray-800/95 backdrop-blur-md rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-200 ${
                     isSolutionsOpen ? "opacity-100 visible" : "opacity-0 invisible"
                   }`}
@@ -149,7 +147,6 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-gray-800 transition-colors"
             className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
@@ -163,7 +160,6 @@ export default function Header() {
             isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
-          <div className="py-4 space-y-4 border-t border-gray-700">
           <div className="py-4 space-y-4 border-t border-gray-200 dark:border-gray-700">
             <div className="space-y-2">
               <p className="font-semibold text-gray-800 dark:text-white px-2">Services</p>
