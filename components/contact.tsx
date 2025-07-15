@@ -40,8 +40,8 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-white/70 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-gray-200/50 dark:border-gray-700/50">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send us a message</h3>
+          <div className="bg-white/70 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-200/50 dark:border-gray-700/50">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Send us a message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
@@ -180,19 +180,6 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-green-500/20 to-green-600/30 dark:from-green-600/20 dark:to-green-700/30 backdrop-blur-sm rounded-xl p-8 text-gray-900 dark:text-white border border-green-500/30 dark:border-green-500/20">
-              <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
-              <p className="mb-6 opacity-90 text-gray-800 dark:text-white">
-                Join hundreds of businesses that trust Auxgens to protect their digital assets and ensure compliance.
-              </p>
-              <Button
-                variant="secondary"
-                className="bg-white/20 dark:bg-white/10 text-gray-900 dark:text-white hover:bg-white/30 dark:hover:bg-white/20 font-medium transition-all duration-200 backdrop-blur-sm border border-white/30 dark:border-white/20"
-              >
-                Schedule a Consultation
-              </Button>
             </div>
           </div>
         </div>

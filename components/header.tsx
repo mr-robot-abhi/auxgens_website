@@ -50,24 +50,31 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-28">
+          <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <Link href="/" className="flex-shrink-0 transition-transform hover:scale-110">
-              <div className="rounded-full overflow-hidden bg-white dark:bg-gray-900 shadow-lg border-2 border-green-500 flex items-center justify-center h-20 w-20 lg:h-24 lg:w-24">
-                <Image
-                  src="/images/Auxgens_Logo.png"
-                  alt="Auxgens"
-                  width={120}
-                  height={120}
-                  className="object-cover h-20 w-20 lg:h-24 lg:w-24"
-                  priority
-                />
-              </div>
+            <Link href="/" className="flex-shrink-0 transition-transform hover:scale-110 mt-1">
+              <Image
+                src="/images/Auxgens_Logo_expnad-removebg-preview.png"
+                alt="Auxgens"
+                width={140}
+                height={140}
+                className="object-contain h-20 w-auto lg:h-24"
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <nav className="flex items-center space-x-8">
+                {/* Home */}
+                <Link
+                  href="/"
+                  className="text-gray-600 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-400 font-medium transition-colors duration-200 relative group"
+                >
+                  Home
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 dark:bg-green-400 transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+
                 {/* Services Dropdown */}
                 <div className="relative group">
                   <button

@@ -109,7 +109,7 @@ export default function GRCVisuals() {
         transition={{ duration: 0.7 }}
         className="max-w-6xl mx-auto text-center"
       >
-        <h2 className="text-3xl font-bold mb-8 text-white dark:text-white">Managed GRC Services</h2>
+        <h2 className="text-3xl font-bold mb-8 text-green-600 dark:text-white">Managed GRC Services</h2>
         <div className="flex justify-between items-center gap-6 flex-wrap">
           {[
             {

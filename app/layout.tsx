@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description: "Professional managed cyber & information security data service provider with global expertise. Securing today for a better tomorrow.",
     images: [
       {
-        url: "/images/auxgens-logo-final.png",
+        url: "/images/Auxgens_Logo_expnad-removebg-preview.png",
         width: 1200,
         height: 630,
         alt: "Auxgens - Cybersecurity Solutions",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Auxgens - Professional Cybersecurity & Compliance Solutions",
     description: "Professional managed cyber & information security data service provider with global expertise. Securing today for a better tomorrow.",
-    images: ["/images/auxgens-logo-final.png"],
+    images: ["/images/Auxgens_Logo_expnad-removebg-preview.png"],
     creator: "@auxgens",
   },
   verification: {

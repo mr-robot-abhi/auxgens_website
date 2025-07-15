@@ -2,33 +2,35 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Mail, Phone, Globe, Linkedin } from "lucide-react"
+import { Mail, Phone, Globe, Linkedin, MapPin } from "lucide-react"
 
 const footerSections = [
   {
     title: "Services",
     links: [
-      "Cybersecurity Management",
-      "Data Protection",
-      "Network Security",
-      "Identity Management",
-      "Security Auditing",
-      "Security Training",
+      { name: "GRC Services", href: "/services/grc" },
+      { name: "Virtual CISO", href: "/services/virtual-ciso" },
+      { name: "Cybersecurity & Data Privacy", href: "/services/cybersecurity" },
+      { name: "Managed Security (MSSP)", href: "/services/mssp" },
+      { name: "SOC as a Service", href: "/services/soc" },
+      { name: "DPO as a Service", href: "/services/dpo" },
+    ],
+  },
+  {
+    title: "Solutions",
+    links: [
+      { name: "GDPR Compliance", href: "/solutions/gdpr" },
+      { name: "CCPA Compliance", href: "/solutions/ccpa" },
     ],
   },
   {
     title: "About Us",
-    links: ["Our Team", "Careers", "News & Updates", "Case Studies", "Partnerships"],
-  },
-  {
-    title: "Support",
     links: [
-      "Contact Support",
-      "Emergency Response",
-      "Documentation",
-      "Security Center",
-      "Status Page",
-      "Privacy Policy",
+      { name: "Our Team", href: "#" },
+      { name: "Careers", href: "#" },
+      { name: "News & Updates", href: "#" },
+      { name: "Case Studies", href: "#" },
+      { name: "Partnerships", href: "#" },
     ],
   },
 ]
@@ -38,17 +40,17 @@ const regions = ["Asia Pacific", "United States", "Europe, Middle East, Africa",
 export default function Footer() {
   return (
     <footer className="bg-gray-50/80 dark:bg-gray-950/80 backdrop-blur-sm text-gray-900 dark:text-white border-t border-gray-200/50 dark:border-gray-800/50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid lg:grid-cols-4 gap-6">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="mb-6">
               <Image
-                src="/images/auxgens-green-final.png"
+                src="/images/Auxgens_Logo_expnad-removebg-preview.png"
                 alt="Auxgens"
-                width={220}
-                height={180}
-                className="h-20 w-auto"
+                width={280}
+                height={220}
+                className="h-28 w-auto"
               />
             </div>
             <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
@@ -77,9 +79,9 @@ export default function Footer() {
               <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">{section.title}</h3>
               <ul className="space-y-3">
                 {section.links.map((link) => (
-                  <li key={link}>
-                    <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200">
-                      {link}
+                  <li key={link.name}>
+                    <Link href={link.href} className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200">
+                      {link.name}
                     </Link>
                   </li>
                 ))}
@@ -89,67 +91,22 @@ export default function Footer() {
         </div>
 
         {/* Global Presence */}
-        <div className="border-t border-gray-200/50 dark:border-gray-800/50 mt-12 pt-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-500/30 to-green-600/40 dark:from-green-500/20 dark:to-green-600/30 backdrop-blur-sm rounded-lg flex items-center justify-center border border-green-500/30 dark:border-green-500/20">
-                <Mail className="w-5 h-5 text-green-600 dark:text-green-400" />
-              </div>
-              <div>
-                <p className="font-semibold text-gray-900 dark:text-white">Email</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">security@auxgens.com</p>
-              </div>
+        <div className="border-t border-gray-200/50 dark:border-gray-800/50 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+          <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-2">
+              <Mail className="w-5 h-5 text-green-600 dark:text-green-400" />
+              <span className="text-sm text-gray-600 dark:text-gray-400">sales@auxgens.net</span>
             </div>
-
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-500/30 to-green-600/40 dark:from-green-500/20 dark:to-green-600/30 backdrop-blur-sm rounded-lg flex items-center justify-center border border-green-500/30 dark:border-green-500/20">
-                <Phone className="w-5 h-5 text-green-600 dark:text-green-400" />
-              </div>
-              <div>
-                <p className="font-semibold text-gray-900 dark:text-white">24/7 Emergency</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">+1 (555) 911-HELP</p>
-              </div>
+            <div className="flex items-center space-x-2 ml-6">
+              <MapPin className="w-5 h-5 text-green-600 dark:text-green-400" />
+              <span className="text-sm text-gray-600 dark:text-gray-400">C3834, Brigade Meadows, Udayapura, Bengaluru 560082.</span>
             </div>
-
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-500/30 to-green-600/40 dark:from-green-500/20 dark:to-green-600/30 backdrop-blur-sm rounded-lg flex items-center justify-center border border-green-500/30 dark:border-green-500/20">
-                <Globe className="w-5 h-5 text-green-600 dark:text-green-400" />
-              </div>
-              <div>
-                <p className="font-semibold text-gray-900 dark:text-white">Global Presence</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Asia US EMEA EU</p>
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-500/30 to-green-600/40 dark:from-green-500/20 dark:to-green-600/30 backdrop-blur-sm rounded-lg flex items-center justify-center border border-green-500/30 dark:border-green-500/20">
-                <span className="text-sm font-bold text-green-600 dark:text-green-400">{"<15"}</span>
-              </div>
-              <div>
-                <p className="font-semibold text-gray-900 dark:text-white">Response Time</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Minutes average</p>
-              </div>
+            <div className="flex items-center space-x-2 ml-6">
+              <MapPin className="w-5 h-5 text-green-600 dark:text-green-400" />
+              <span className="text-sm text-gray-600 dark:text-gray-400">17710, 35th Dr Se Bothell, WA 98012</span>
             </div>
           </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-200/50 dark:border-gray-800/50 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 md:mb-0">
-            © 2025 Auxgens. All rights reserved. | Securing businesses worldwide with professional cybersecurity
-            solutions.
-          </p>
-          <div className="flex space-x-6 text-sm">
-            <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200">
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200">
-              Security Compliance
-            </Link>
-          </div>
+          <p className="text-gray-600 dark:text-gray-400 text-sm mt-4 md:mt-0">© 2025 Auxgens. All rights reserved.</p>
         </div>
       </div>
     </footer>

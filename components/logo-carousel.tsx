@@ -16,6 +16,7 @@ export default function LogoCarousel() {
   // No JS interval, use CSS animation for smooth infinite left-to-right
   return (
     <div className="w-full py-4">
+      <h2 className="text-4xl font-extrabold text-green-600 dark:text-white text-center mb-6">Our Partners</h2>
       <div className="overflow-x-hidden relative">
         <div
           className="flex items-center gap-16 animate-carousel-move"
