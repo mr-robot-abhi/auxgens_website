@@ -38,9 +38,8 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <div className="bg-white/70 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-200/50 dark:border-gray-700/50">
+        <div className="flex justify-center">
+          <div className="bg-white/70 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-200/50 dark:border-gray-700/50 w-full max-w-xl">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Send us a message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
@@ -129,58 +128,6 @@ export default function Contact() {
                 Send Message
               </Button>
             </form>
-          </div>
-
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="bg-white/70 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-gray-200/50 dark:border-gray-700/50">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact Information</h3>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-500/30 to-green-600/40 dark:from-green-500/20 dark:to-green-600/30 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 border border-green-500/30 dark:border-green-500/20">
-                    <Mail className="w-6 h-6 text-green-600 dark:text-green-400" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">Email</h4>
-                    <p className="text-gray-600 dark:text-gray-300">security@auxgens.com</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">We'll respond within 24 hours</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-500/30 to-green-600/40 dark:from-green-500/20 dark:to-green-600/30 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 border border-green-500/30 dark:border-green-500/20">
-                    <Phone className="w-6 h-6 text-green-600 dark:text-green-400" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">24/7 Emergency Hotline</h4>
-                    <p className="text-gray-600 dark:text-gray-300">+1 (555) 911-HELP</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">For urgent security incidents</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-500/30 to-green-600/40 dark:from-green-500/20 dark:to-green-600/30 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 border border-green-500/30 dark:border-green-500/20">
-                    <MapPin className="w-6 h-6 text-green-600 dark:text-green-400" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">Global Presence</h4>
-                    <p className="text-gray-600 dark:text-gray-300">Asia Pacific • United States</p>
-                    <p className="text-gray-600 dark:text-gray-300">Europe, Middle East, Africa • European Union</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-500/30 to-green-600/40 dark:from-green-500/20 dark:to-green-600/30 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 border border-green-500/30 dark:border-green-500/20">
-                    <Clock className="w-6 h-6 text-green-600 dark:text-green-400" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">Response Time</h4>
-                    <p className="text-gray-600 dark:text-gray-300">{"<15 minutes average"}</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">For critical security incidents</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
