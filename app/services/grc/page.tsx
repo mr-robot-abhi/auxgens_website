@@ -14,7 +14,6 @@ export default function GRCServices() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Hero Section */}
             <div className="text-center mb-16">
-              <Shield className="w-20 h-20 text-green-600 dark:text-green-400 mx-auto mb-6" />
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">GRC Services</h1>
               <p className="text-xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 Governance, Risk and Compliance framework that helps organizations secure business critical data and
@@ -26,11 +25,11 @@ export default function GRCServices() {
 
             {/* What is GRC */}
             <div className="mb-20">
-              <div className="bg-gradient-to-br from-blue-500/10 to-green-500/10 dark:from-blue-500/10 dark:to-green-500/10 backdrop-blur-sm p-12 rounded-2xl border border-blue-500/20">
+              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-12 rounded-2xl border border-green-200/50 dark:border-green-800/50">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">Understanding GRC</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center">
-                    <Settings className="w-16 h-16 text-blue-600 dark:text-blue-400 mx-auto mb-4" />
+                    <Settings className="w-16 h-16 text-green-600 dark:text-green-400 mx-auto mb-4" />
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Governance</h3>
                     <p className="text-gray-700 dark:text-gray-300">
                       Establishing policies, procedures, and frameworks that guide organizational decision-making and
@@ -38,7 +37,7 @@ export default function GRCServices() {
                     </p>
                   </div>
                   <div className="text-center">
-                    <AlertTriangle className="w-16 h-16 text-yellow-600 dark:text-yellow-400 mx-auto mb-4" />
+                    <AlertTriangle className="w-16 h-16 text-green-600 dark:text-green-400 mx-auto mb-4" />
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Risk</h3>
                     <p className="text-gray-700 dark:text-gray-300">
                       Identifying, assessing, and managing potential threats to organizational assets, operations, and
@@ -103,7 +102,7 @@ export default function GRCServices() {
                 ].map((challenge, index) => (
                   <div
                     key={index}
-                    className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700/50"
+                    className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-green-200/50 dark:border-green-800/50"
                   >
                     <AlertTriangle className="w-6 h-6 text-orange-600 dark:text-orange-400 mb-3" />
                     <h3 className="font-bold text-gray-900 dark:text-white mb-2">{challenge.title}</h3>
@@ -115,7 +114,7 @@ export default function GRCServices() {
 
             {/* How We Help */}
             <div className="mb-20">
-              <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 dark:from-green-500/10 dark:to-blue-500/10 backdrop-blur-sm p-12 rounded-2xl border border-green-500/20">
+              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-12 rounded-2xl border border-green-200/50 dark:border-green-800/50">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">How Auxgens Can Help</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
@@ -215,7 +214,7 @@ export default function GRCServices() {
                   return (
                     <div
                       key={index}
-                      className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50 text-center"
+                      className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-200/50 dark:border-green-800/50 text-center"
                     >
                       <Icon className="w-12 h-12 text-green-600 dark:text-green-400 mx-auto mb-4" />
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">{service.title}</h3>
@@ -303,7 +302,7 @@ export default function GRCServices() {
                 ].map((benefit, index) => (
                   <div
                     key={index}
-                    className="bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700/50"
+                    className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-200/50 dark:border-green-800/50"
                   >
                     <div className="flex items-start space-x-4">
                       <CheckCircle className="w-8 h-8 text-green-400 mt-1 flex-shrink-0" />
@@ -319,14 +318,14 @@ export default function GRCServices() {
 
             {/* CTA Section */}
             <div className="text-center">
-              <div className="bg-gradient-to-r from-green-600/20 to-green-700/30 backdrop-blur-sm text-white p-12 rounded-2xl border border-green-500/20">
+              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-green-200/50 dark:border-green-800/50">
                 <h2 className="text-3xl font-bold mb-4">Ready to Strengthen Your GRC Framework?</h2>
                 <p className="text-xl mb-8 opacity-90">
                   Let our experts help you build a comprehensive governance, risk, and compliance strategy that protects
                   your business and ensures regulatory compliance.
                 </p>
                 <Link href="/contact">
-                  <Button className="bg-white/10 text-white hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20">
+                  <Button className="bg-white/10 text-green-800 hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20">
                     Get Started Today
                   </Button>
                 </Link>

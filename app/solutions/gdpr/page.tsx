@@ -14,7 +14,6 @@ export default function GDPR() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Hero Section */}
             <div className="text-center mb-16">
-              <Shield className="w-20 h-20 text-green-600 dark:text-green-400 mx-auto mb-6" />
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">GDPR Compliance Solutions</h1>
               <p className="text-xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 The General Data Protection Regulation (GDPR) is the European Union's comprehensive data protection law
@@ -26,7 +25,7 @@ export default function GDPR() {
 
             {/* GDPR Overview */}
             <div className="mb-20">
-              <div className="bg-gradient-to-br from-blue-500/10 to-green-500/10 dark:from-blue-500/10 dark:to-green-500/10 backdrop-blur-sm p-12 rounded-2xl border border-blue-500/20">
+              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-12 rounded-2xl border border-green-500/20">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">Understanding GDPR</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
@@ -255,7 +254,7 @@ export default function GDPR() {
                 ].map((area, index) => (
                   <div
                     key={index}
-                    className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50"
+                    className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-green-500/20"
                   >
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{area.title}</h3>
                     <div className="grid md:grid-cols-2 gap-4">
@@ -273,7 +272,7 @@ export default function GDPR() {
 
             {/* Key Benefits */}
             <div className="mb-20">
-              <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 dark:from-green-500/10 dark:to-blue-500/10 backdrop-blur-sm p-12 rounded-2xl border border-green-500/20">
+              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-12 rounded-2xl border border-green-500/20">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">Key Benefits of Our GDPR Services</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
@@ -312,7 +311,7 @@ export default function GDPR() {
                   ].map((benefit, index) => (
                     <div key={index} className="text-center">
                       <div className="w-16 h-16 bg-green-600/20 dark:bg-green-600/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 border border-green-500/30">
-                        <span className="text-white font-bold text-xl">{index + 1}</span>
+                        <span className="text-green-700 font-bold text-xl">{index + 1}</span>
                       </div>
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">{benefit.title}</h3>
                       <p className="text-gray-700 dark:text-gray-300 text-sm">{benefit.desc}</p>
@@ -353,7 +352,7 @@ export default function GDPR() {
                     className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50 text-center"
                   >
                     <div className="w-12 h-12 bg-green-600/20 dark:bg-green-600/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 border border-green-500/30">
-                      <span className="text-white font-bold">{index + 1}</span>
+                      <span className="text-green-700 font-bold">{index + 1}</span>
                     </div>
                     <h3 className="font-bold text-green-600 dark:text-green-400 mb-2">{phase.phase}</h3>
                     <h4 className="font-bold text-gray-900 dark:text-white mb-2">{phase.title}</h4>
@@ -365,22 +364,22 @@ export default function GDPR() {
 
             {/* CTA Section */}
             <div className="text-center">
-              <div className="bg-gradient-to-r from-green-600/20 to-green-700/30 dark:from-green-600/20 dark:to-green-700/30 backdrop-blur-sm text-white p-12 rounded-2xl border border-green-500/20">
+              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-green-500/20">
                 <h2 className="text-3xl font-bold mb-4">Ready for GDPR Compliance?</h2>
-                <p className="text-xl mb-8 opacity-90">
+                <p className="text-xl mb-8 opacity-90 text-gray-900 dark:text-white">
                   Ensure your organization meets GDPR requirements and protects customer data with our comprehensive
                   compliance solutions.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/contact">
-                    <Button className="bg-white/10 dark:bg-white/10 text-white hover:bg-white/20 dark:hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20 dark:border-white/20">
+                    <Button className="bg-white/10 dark:bg-white/10 text-green-800 hover:bg-white/20 dark:hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20 dark:border-white/20">
                       Start GDPR Compliance
                     </Button>
                   </Link>
                   <Link href="/services/dpo">
                     <Button
                       variant="outline"
-                      className="border-white/20 text-white hover:bg-white/10 dark:hover:bg-white/10 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 bg-transparent backdrop-blur-sm"
+                      className="border-white/20 text-green-800 hover:bg-white/10 dark:hover:bg-white/10 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 bg-transparent backdrop-blur-sm"
                     >
                       Learn About DPO Services
                     </Button>

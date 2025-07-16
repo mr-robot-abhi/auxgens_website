@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Shield, Scale, Settings, Users, Database, Server, Smartphone, CheckCircle } from "lucide-react"
+import { Shield, Scale, Settings, Users, Database, Server, Smartphone, CheckCircle, FileText } from "lucide-react"
 
 export default function GRCVisuals() {
   return (
@@ -114,21 +114,21 @@ export default function GRCVisuals() {
           {[
             {
               title: "Assess",
-              icon: "📋",
+              icon: <FileText className="w-10 h-10 text-green-600 dark:text-green-400 mx-auto mb-3" />,
               bg: "bg-blue-100/80 dark:bg-blue-900/40",
               border: "border-blue-200/50 dark:border-blue-800/50",
               items: ["Cyber Resilience", "Security Review", "VCISO", "Control Assurance"],
             },
             {
               title: "Transform",
-              icon: "🔄",
+              icon: <Settings className="w-10 h-10 text-green-600 dark:text-green-400 mx-auto mb-3" />,
               bg: "bg-purple-100/80 dark:bg-purple-900/40",
               border: "border-purple-200/50 dark:border-purple-800/50",
               items: ["Migration", "Integration", "GRC Automation", "Framework Mapping"],
             },
             {
               title: "Manage",
-              icon: "🛠️",
+              icon: <Users className="w-10 h-10 text-green-600 dark:text-green-400 mx-auto mb-3" />,
               bg: "bg-green-100/80 dark:bg-green-900/40",
               border: "border-green-200/50 dark:border-green-800/50",
               items: ["Monitoring", "Continuous Improvement", "Risk Mitigation", "Policy Enforcement"],
@@ -139,7 +139,7 @@ export default function GRCVisuals() {
               whileHover={{ scale: 1.05 }}
               className={`${stage.bg} ${stage.border} border p-6 rounded-2xl shadow-lg w-full sm:w-[30%] backdrop-blur-sm`}
             >
-              <div className="text-4xl mb-3">{stage.icon}</div>
+              <div className="flex justify-center">{stage.icon}</div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">{stage.title}</h3>
               <ul className="text-sm space-y-2 text-gray-600 dark:text-gray-300">
                 {stage.items.map((point, j) => (

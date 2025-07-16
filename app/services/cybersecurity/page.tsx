@@ -14,7 +14,6 @@ export default function Cybersecurity() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Hero Section */}
             <div className="text-center mb-16">
-              <Lock className="w-20 h-20 text-green-600 dark:text-green-400 mx-auto mb-6" />
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">Cybersecurity & Data Privacy</h1>
               <p className="text-xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks.
@@ -26,7 +25,7 @@ export default function Cybersecurity() {
             {/* Current Challenges */}
             <div className="mb-20">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">Current Cybersecurity Challenges</h2>
-              <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 dark:from-red-500/10 dark:to-orange-500/10 backdrop-blur-sm p-8 rounded-2xl border border-red-500/20">
+              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-8 rounded-2xl border border-green-200/50 dark:border-green-800/50">
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-center">
                   Implementing effective cybersecurity measures is particularly challenging today because there are more
                   devices than people, and attackers are becoming more innovative. In the current digital arena, where
@@ -73,7 +72,7 @@ export default function Cybersecurity() {
                   return (
                     <div
                       key={index}
-                      className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50 text-center"
+                      className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-200/50 dark:border-green-800/50 text-center"
                     >
                       <Icon className="w-12 h-12 text-green-600 dark:text-green-400 mx-auto mb-4" />
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">{feature.title}</h3>
@@ -108,7 +107,7 @@ export default function Cybersecurity() {
                 ].map((benefit, index) => (
                   <div
                     key={index}
-                    className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50"
+                    className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-green-200/50 dark:border-green-800/50"
                   >
                     <div className="flex items-start space-x-4">
                       <div className="w-3 h-3 bg-green-600 dark:bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
@@ -124,13 +123,13 @@ export default function Cybersecurity() {
 
             {/* CTA Section */}
             <div className="text-center">
-              <div className="bg-gradient-to-r from-green-600/20 to-green-700/30 dark:from-green-600/20 dark:to-green-700/30 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-green-500/20">
+              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-green-200/50 dark:border-green-800/50">
                 <h2 className="text-3xl font-bold mb-4">Strengthen Your Cybersecurity Posture</h2>
                 <p className="text-xl mb-8 opacity-90">
                   Protect your organization with our comprehensive cybersecurity solutions.
                 </p>
                 <Link href="/contact">
-                  <Button className="bg-white/10 text-white hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20">
+                  <Button className="bg-white/10 text-green-800 hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20">
                     Secure Your Business
                   </Button>
                 </Link>

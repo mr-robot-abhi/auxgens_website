@@ -14,7 +14,6 @@ export default function VirtualCISO() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Hero Section */}
             <div className="text-center mb-16">
-              <UserCheck className="w-20 h-20 text-green-600 dark:text-green-400 mx-auto mb-6" />
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">Virtual CISO</h1>
               <p className="text-xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 A Virtual Chief Information Security Officer is an outsourced security advisor whose responsibilities
@@ -58,7 +57,7 @@ export default function VirtualCISO() {
                   return (
                     <div
                       key={index}
-                      className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700/50"
+                      className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-green-200/50 dark:border-green-800/50"
                     >
                       <Icon className="w-8 h-8 text-red-600 dark:text-red-400 mb-3" />
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">{challenge.title}</h3>
@@ -71,7 +70,7 @@ export default function VirtualCISO() {
 
             {/* Why Virtual CISO */}
             <div className="mb-20">
-              <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 dark:from-green-500/10 dark:to-blue-500/10 backdrop-blur-sm p-12 rounded-2xl border border-green-500/20">
+              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-12 rounded-2xl border border-green-200/50 dark:border-green-800/50">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">Why Virtual CISO?</h2>
                 <p className="text-lg text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
                   A virtual CISO can be a cost-effective approach to having the access your company needs to high-end
@@ -97,7 +96,7 @@ export default function VirtualCISO() {
                 ].map((responsibility, index) => (
                   <div
                     key={index}
-                    className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50"
+                    className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-200/50 dark:border-green-800/50"
                   >
                     <div className="flex items-start space-x-4">
                       <div className="w-2 h-2 bg-green-600 dark:bg-green-400 rounded-full mt-3 flex-shrink-0"></div>
@@ -120,7 +119,7 @@ export default function VirtualCISO() {
                 ].map((benefit, index) => (
                   <div
                     key={index}
-                    className="bg-gradient-to-br from-green-500/10 to-green-600/20 dark:from-green-500/10 dark:to-green-600/20 backdrop-blur-sm p-6 rounded-xl text-center border border-green-500/20"
+                    className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl text-center border border-green-200/50 dark:border-green-800/50"
                   >
                     <h3 className="font-bold text-gray-900 dark:text-white mb-2">{benefit.title}</h3>
                     <p className="text-gray-700 dark:text-gray-300 text-sm">{benefit.desc}</p>
@@ -131,13 +130,13 @@ export default function VirtualCISO() {
 
             {/* CTA Section */}
             <div className="text-center">
-              <div className="bg-gradient-to-r from-green-600/20 to-green-700/30 dark:from-green-600/20 dark:to-green-700/30 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-green-500/20">
+              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-green-200/50 dark:border-green-800/50">
                 <h2 className="text-3xl font-bold mb-4">Need Expert Security Leadership?</h2>
                 <p className="text-xl mb-8 opacity-90">
                   Get access to experienced cybersecurity leadership without the full-time cost.
                 </p>
                 <Link href="/contact">
-                  <Button className="bg-white/10 text-white hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20">
+                  <Button className="bg-white/10 text-green-800 hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20">
                     Get Your Virtual CISO
                   </Button>
                 </Link>

@@ -14,7 +14,6 @@ export default function CCPA() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Hero Section */}
             <div className="text-center mb-16">
-              <Shield className="w-20 h-20 text-green-600 dark:text-green-400 mx-auto mb-6" />
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">CCPA Compliance</h1>
               <p className="text-xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 The California Consumer Privacy Act of 2018 (CCPA) gives consumers more control over the personal
@@ -53,7 +52,7 @@ export default function CCPA() {
                   return (
                     <div
                       key={index}
-                      className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50"
+                      className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-500/20"
                     >
                       <div className="flex items-start space-x-4">
                         <Icon className="w-8 h-8 text-green-600 dark:text-green-400 mt-1 flex-shrink-0" />
@@ -134,7 +133,7 @@ export default function CCPA() {
                   ].map((service, index) => (
                     <div
                       key={index}
-                      className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50"
+                      className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-500/20"
                     >
                       <h4 className="font-bold text-gray-900 dark:text-white mb-4">{service.title}</h4>
                       <ul className="space-y-2">
@@ -154,7 +153,7 @@ export default function CCPA() {
               <div className="mb-12">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">2. Gap Remediation</h3>
                 <div className="grid md:grid-cols-2 gap-8">
-                  <div className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50">
+                  <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-500/20">
                     <h4 className="font-bold text-gray-900 dark:text-white mb-4">Policies and Procedures</h4>
                     <ul className="space-y-2">
                       {[
@@ -175,7 +174,7 @@ export default function CCPA() {
                       ))}
                     </ul>
                   </div>
-                  <div className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50">
+                  <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-500/20">
                     <h4 className="font-bold text-gray-900 dark:text-white mb-4">Technical Remediation</h4>
                     <ul className="space-y-2">
                       {[
@@ -198,7 +197,7 @@ export default function CCPA() {
               {/* Ongoing Support */}
               <div className="mb-12">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">3. Ongoing Support</h3>
-                <div className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50">
+                <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-500/20">
                   <ul className="space-y-2">
                     {[
                       "Ongoing CCPA compliance monitoring and reporting",
@@ -217,13 +216,13 @@ export default function CCPA() {
 
               {/* CTA Section */}
               <div className="text-center">
-                <div className="bg-gradient-to-r from-green-600/20 to-green-700/30 dark:from-green-600/20 dark:to-green-700/30 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-green-500/20">
+                <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-green-500/20">
                   <h2 className="text-3xl font-bold mb-4">Ready for CCPA Compliance?</h2>
                   <p className="text-xl mb-8 opacity-90">
                     Protect your business and your customers with our CCPA compliance solutions.
                   </p>
                   <Link href="/contact">
-                    <Button className="bg-white/10 dark:bg-white/10 text-white hover:bg-white/20 dark:hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20 dark:border-white/20">
+                    <Button className="bg-white/10 dark:bg-white/10 text-green-800 hover:bg-white/20 dark:hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20 dark:border-white/20">
                       Start CCPA Compliance
                     </Button>
                   </Link>

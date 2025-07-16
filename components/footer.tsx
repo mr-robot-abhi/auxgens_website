@@ -23,90 +23,108 @@ const footerSections = [
       { name: "CCPA Compliance", href: "/solutions/ccpa" },
     ],
   },
-  {
-    title: "About Us",
-    links: [
-      { name: "Our Team", href: "#" },
-      { name: "Careers", href: "#" },
-      { name: "News & Updates", href: "#" },
-      { name: "Case Studies", href: "#" },
-      { name: "Partnerships", href: "#" },
-    ],
-  },
+  // Removed About Us section
 ]
 
 const regions = ["Asia Pacific", "United States", "Europe, Middle East, Africa", "European Union"]
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50/80 dark:bg-gray-950/80 backdrop-blur-sm text-gray-900 dark:text-white border-t border-gray-200/50 dark:border-gray-800/50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid lg:grid-cols-4 gap-6">
+    <footer className="bg-gray-50/80 border-t border-gray-200/50 text-gray-900">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center">
           {/* Company Info */}
-          <div className="lg:col-span-1">
-            <div className="mb-6">
+          <div className="flex flex-col items-start justify-center md:col-span-1">
+            <div className="mb-2">
               <Image
                 src="/images/Auxgens_Logo_expnad-removebg-preview.png"
                 alt="Auxgens"
-                width={280}
-                height={220}
-                className="h-28 w-auto"
+                width={140}
+                height={140}
+                className="object-contain h-20 w-auto lg:h-24"
               />
             </div>
-            <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+            <p className="text-gray-600 mb-2 leading-relaxed text-sm max-w-xs">
               Professional managed cyber & information security data service provider with global expertise and
               cutting-edge technology.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-2 mb-1">
               <Link
-                href="#"
-                className="w-10 h-10 bg-gray-200/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-green-500/20 dark:hover:bg-green-600/20 hover:border-green-500/50 transition-colors duration-200 border border-gray-300/50 dark:border-gray-700/50"
+                href="https://www.linkedin.com/company/auxgen/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-gray-200/80 rounded-lg flex items-center justify-center hover:bg-green-500/20 hover:border-green-500/50 transition-colors duration-200 border border-gray-300/50"
               >
-                <Linkedin className="w-5 h-5" />
+                <Linkedin className="w-4 h-4" />
               </Link>
               <Link
-                href="#"
-                className="w-10 h-10 bg-gray-200/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-green-500/20 dark:hover:bg-green-600/20 hover:border-green-500/50 transition-colors duration-200 border border-gray-300/50 dark:border-gray-700/50"
+                href="mailto:sales@auxgens.net"
+                className="w-8 h-8 bg-gray-200/80 rounded-lg flex items-center justify-center hover:bg-green-500/20 hover:border-green-500/50 transition-colors duration-200 border border-gray-300/50"
               >
-                <Mail className="w-5 h-5" />
+                <Mail className="w-4 h-4" />
               </Link>
             </div>
           </div>
 
-          {/* Footer Sections */}
-          {footerSections.map((section) => (
-            <div key={section.title}>
-              <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">{section.title}</h3>
-              <ul className="space-y-3">
-                {section.links.map((link) => (
+          {/* Footer Sections - right aligned */}
+          <div className="md:col-span-2 flex flex-row justify-end gap-12">
+            {/* Services: 2 columns */}
+            <div className="mb-0">
+              <h3 className="font-bold text-base mb-2 text-gray-900">Services</h3>
+              <div className="grid grid-cols-2 gap-x-6">
+                <ul className="space-y-1">
+                  {footerSections[0].links.slice(0, 3).map((link) => (
+                    <li key={link.name}>
+                      <Link href={link.href} className="text-gray-600 hover:text-green-600 transition-colors duration-200 text-sm">
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <ul className="space-y-1">
+                  {footerSections[0].links.slice(3).map((link) => (
+                    <li key={link.name}>
+                      <Link href={link.href} className="text-gray-600 hover:text-green-600 transition-colors duration-200 text-sm">
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            {/* Solutions: single column */}
+            <div className="mb-0">
+              <h3 className="font-bold text-base mb-2 text-gray-900">Solutions</h3>
+              <ul className="space-y-1">
+                {footerSections[1].links.map((link) => (
                   <li key={link.name}>
-                    <Link href={link.href} className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200">
+                    <Link href={link.href} className="text-gray-600 hover:text-green-600 transition-colors duration-200 text-sm">
                       {link.name}
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
-          ))}
+          </div>
         </div>
 
         {/* Global Presence */}
-        <div className="border-t border-gray-200/50 dark:border-gray-800/50 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
-              <Mail className="w-5 h-5 text-green-600 dark:text-green-400" />
-              <span className="text-sm text-gray-600 dark:text-gray-400">sales@auxgens.net</span>
+        <div className="border-t border-gray-200/50 mt-2 pt-2 flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-wrap items-center space-x-2 text-xs">
+            <div className="flex items-center space-x-1">
+              <Mail className="w-4 h-4 text-green-600" />
+              <span className="text-gray-600">sales@auxgens.net</span>
             </div>
-            <div className="flex items-center space-x-2 ml-6">
-              <MapPin className="w-5 h-5 text-green-600 dark:text-green-400" />
-              <span className="text-sm text-gray-600 dark:text-gray-400">C3834, Brigade Meadows, Udayapura, Bengaluru 560082.</span>
+            <div className="flex items-center space-x-1 ml-3">
+              <MapPin className="w-4 h-4 text-green-600" />
+              <span className="text-gray-600">C3834, Brigade Meadows, Udayapura, Bengaluru 560082.</span>
             </div>
-            <div className="flex items-center space-x-2 ml-6">
-              <MapPin className="w-5 h-5 text-green-600 dark:text-green-400" />
-              <span className="text-sm text-gray-600 dark:text-gray-400">17710, 35th Dr Se Bothell, WA 98012</span>
+            <div className="flex items-center space-x-1 ml-3">
+              <MapPin className="w-4 h-4 text-green-600" />
+              <span className="text-gray-600">17710, 35th Dr Se Bothell, WA 98012</span>
             </div>
           </div>
-          <p className="text-gray-600 dark:text-gray-400 text-sm mt-4 md:mt-0">© 2025 Auxgens. All rights reserved.</p>
+          <p className="text-gray-600 text-xs mt-2 md:mt-0">© 2025 Auxgens. All rights reserved.</p>
         </div>
       </div>
     </footer>
