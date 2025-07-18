@@ -60,7 +60,7 @@ export default function About() {
             {/* Mission & Vision */}
             <div className="grid md:grid-cols-2 gap-12 mb-20">
               <div className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50">
-                <Target className="w-12 h-12 text-green-600 dark:text-green-400 mb-4" />
+                <Target className="w-12 h-12 text-bluelagoon-600 dark:text-bluelagoon-400 mb-4" />
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Mission</h2>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                   To provide comprehensive cybersecurity and compliance solutions that protect organizations from
@@ -73,7 +73,7 @@ export default function About() {
                 </p>
               </div>
               <div className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50">
-                <Eye className="w-12 h-12 text-green-600 dark:text-green-400 mb-4" />
+                <Eye className="w-12 h-12 text-bluelagoon-600 dark:text-bluelagoon-400 mb-4" />
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Vision</h2>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                   To be the leading global provider of innovative cybersecurity solutions, securing today for a better
@@ -92,7 +92,7 @@ export default function About() {
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">Our Core Values</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="text-center">
-                  <Shield className="w-16 h-16 text-green-600 dark:text-green-400 mx-auto mb-4" />
+                  <Shield className="w-16 h-16 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-4" />
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Security First</h3>
                   <p className="text-gray-700 dark:text-gray-300">
                     We prioritize security in everything we do, ensuring robust protection for our clients through
@@ -100,7 +100,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <Globe className="w-16 h-16 text-green-600 dark:text-green-400 mx-auto mb-4" />
+                  <Globe className="w-16 h-16 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-4" />
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Global Reach</h3>
                   <p className="text-gray-700 dark:text-gray-300">
                     Our worldwide presence enables us to provide local support with global expertise, ensuring
@@ -108,7 +108,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <Users className="w-16 h-16 text-green-600 dark:text-green-400 mx-auto mb-4" />
+                  <Users className="w-16 h-16 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-4" />
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Expert Team</h3>
                   <p className="text-gray-700 dark:text-gray-300">
                     Industry professionals with deep expertise in cybersecurity, compliance, and risk management,
@@ -116,7 +116,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <Award className="w-16 h-16 text-green-600 dark:text-green-400 mx-auto mb-4" />
+                  <Award className="w-16 h-16 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-4" />
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Excellence</h3>
                   <p className="text-gray-700 dark:text-gray-300">
                     We strive for excellence in service delivery and customer satisfaction, maintaining the highest
@@ -168,7 +168,7 @@ export default function About() {
                       key={index}
                       className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50"
                     >
-                      <Icon className="w-12 h-12 text-green-600 dark:text-green-400 mb-4" />
+                      <Icon className="w-12 h-12 text-bluelagoon-600 dark:text-bluelagoon-400 mb-4" />
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{expertise.title}</h3>
                       <p className="text-gray-700 dark:text-gray-300">{expertise.desc}</p>
                     </div>
@@ -179,7 +179,7 @@ export default function About() {
 
             {/* Industry Experience */}
             <div className="mb-20">
-              <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 dark:from-green-500/10 dark:to-blue-500/10 backdrop-blur-sm p-12 rounded-2xl border border-green-500/20">
+              <div className="bg-gradient-to-br from-bluelagoon-500/10 to-blue-500/10 dark:from-bluelagoon-500/10 dark:to-blue-500/10 backdrop-blur-sm p-12 rounded-2xl border border-bluelagoon-500/20">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">Industry Experience</h2>
                 <p className="text-lg text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto leading-relaxed mb-8">
                   Our team has extensive experience across various industries, understanding the unique security
@@ -198,7 +198,7 @@ export default function About() {
                   ].map((industry, index) => (
                     <div
                       key={index}
-                      className="bg-white/80 dark:bg-gray-900/60 rounded-xl shadow border border-gray-200 dark:border-green-500/20 p-6 text-center text-gray-900 dark:text-white"
+                      className="bg-white/80 dark:bg-gray-900/60 rounded-xl shadow border border-gray-200 dark:border-bluelagoon-500/20 p-6 text-center text-gray-900 dark:text-white"
                     >
                       {industry}
                     </div>
@@ -208,12 +208,12 @@ export default function About() {
             </div>
 
             {/* Why Choose Us */}
-            <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 dark:from-green-500/10 dark:to-blue-500/10 backdrop-blur-sm p-12 rounded-2xl border border-green-500/20">
+            <div className="bg-gradient-to-br from-bluelagoon-500/10 to-blue-500/10 dark:from-bluelagoon-500/10 dark:to-blue-500/10 backdrop-blur-sm p-12 rounded-2xl border border-bluelagoon-500/20">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">Why Choose Auxgens?</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-bluelagoon-400 rounded-full mt-3 flex-shrink-0"></div>
                     <div>
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">Comprehensive Solutions</h3>
                       <p className="text-gray-700 dark:text-gray-300">
@@ -223,7 +223,7 @@ export default function About() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-bluelagoon-400 rounded-full mt-3 flex-shrink-0"></div>
                     <div>
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">Industry Expertise</h3>
                       <p className="text-gray-700 dark:text-gray-300">
@@ -233,7 +233,7 @@ export default function About() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-bluelagoon-400 rounded-full mt-3 flex-shrink-0"></div>
                     <div>
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">24/7 Support</h3>
                       <p className="text-gray-700 dark:text-gray-300">
@@ -243,7 +243,7 @@ export default function About() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-bluelagoon-400 rounded-full mt-3 flex-shrink-0"></div>
                     <div>
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">Scalable Services</h3>
                       <p className="text-gray-700 dark:text-gray-300">
@@ -255,7 +255,7 @@ export default function About() {
                 </div>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-bluelagoon-400 rounded-full mt-3 flex-shrink-0"></div>
                     <div>
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">Cutting-edge Technology</h3>
                       <p className="text-gray-700 dark:text-gray-300">
@@ -265,7 +265,7 @@ export default function About() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-bluelagoon-400 rounded-full mt-3 flex-shrink-0"></div>
                     <div>
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">Proven Track Record</h3>
                       <p className="text-gray-700 dark:text-gray-300">
@@ -275,7 +275,7 @@ export default function About() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-bluelagoon-400 rounded-full mt-3 flex-shrink-0"></div>
                     <div>
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">Cost-effective Solutions</h3>
                       <p className="text-gray-700 dark:text-gray-300">
@@ -285,7 +285,7 @@ export default function About() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-bluelagoon-400 rounded-full mt-3 flex-shrink-0"></div>
                     <div>
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">Continuous Innovation</h3>
                       <p className="text-gray-700 dark:text-gray-300">

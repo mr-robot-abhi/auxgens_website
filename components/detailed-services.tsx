@@ -47,23 +47,40 @@ const services = [
     points: ["GDPR Compliance", "Privacy Audits", "Data Protection"],
     href: "/services/dpo",
   },
+  {
+    icon: ShieldCheck,
+    title: "GDPR Compliance",
+    description: "Comprehensive GDPR compliance solutions for EU data protection and privacy.",
+    points: ["GDPR Assessment", "Data Mapping", "Compliance Program"],
+    href: "/solutions/gdpr",
+  },
+  {
+    icon: ShieldCheck,
+    title: "CCPA Compliance",
+    description: "California Consumer Privacy Act compliance solutions for data privacy and protection.",
+    points: ["CCPA Assessment", "Data Discovery", "Compliance Program"],
+    href: "/solutions/ccpa",
+  },
 ]
 
 export default function DetailedServices() {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <div className="bg-green-50 dark:bg-green-900/40 rounded-3xl p-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="bg-bluelagoon-50 dark:bg-bluelagoon-900/40 rounded-3xl p-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-bluelagoon-600 dark:text-bluelagoon-400 mb-4">Our Services</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => {
               const Icon = service.icon
               return (
                 <div
                   key={index}
-                  className="bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-xl p-6 flex flex-col h-full transition-all duration-300 hover:border-green-500/50 dark:hover:border-green-400/50 hover:shadow-2xl hover:shadow-green-500/10"
+                  className="bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-xl p-6 flex flex-col h-full transition-all duration-300 hover:border-bluelagoon-500/50 dark:hover:border-bluelagoon-400/50 hover:shadow-2xl hover:shadow-bluelagoon-500/10"
                 >
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="p-3 rounded-lg bg-gradient-to-r from-green-600 to-green-500">
+                    <div className="p-3 rounded-lg bg-gradient-to-r from-bluelagoon-600 to-bluelagoon-500">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white">{service.title}</h3>
@@ -72,7 +89,7 @@ export default function DetailedServices() {
                   <ul className="space-y-2 mb-6 text-gray-500 dark:text-gray-400">
                     {service.points.map((point, i) => (
                       <li key={i} className="flex items-center">
-                        <ChevronRight className="w-4 h-4 text-green-600 dark:text-green-400 mr-2 flex-shrink-0" />
+                        <ChevronRight className="w-4 h-4 text-bluelagoon-600 dark:text-bluelagoon-400 mr-2 flex-shrink-0" />
                         <span>{point}</span>
                       </li>
                     ))}
@@ -81,7 +98,7 @@ export default function DetailedServices() {
                     <Link href={service.href}>
                       <Button
                         variant="outline"
-                        className="w-full border-green-500/50 dark:border-green-400/50 text-green-600 dark:text-green-400 hover:bg-green-500/10 dark:hover:bg-green-400/10 hover:text-green-700 dark:hover:text-green-300 hover:border-green-500 dark:hover:border-green-400"
+                        className="w-full border-bluelagoon-500/50 dark:border-bluelagoon-400/50 text-bluelagoon-600 dark:text-bluelagoon-400 hover:bg-bluelagoon-500/10 dark:hover:bg-bluelagoon-400/10 hover:text-bluelagoon-700 dark:hover:text-bluelagoon-300 hover:border-bluelagoon-500 dark:hover:border-bluelagoon-400"
                       >
                         Learn More
                       </Button>

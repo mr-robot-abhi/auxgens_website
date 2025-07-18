@@ -52,10 +52,10 @@ export default function CCPA() {
                   return (
                     <div
                       key={index}
-                      className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-500/20"
+                      className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-bluelagoon-500/20"
                     >
                       <div className="flex items-start space-x-4">
-                        <Icon className="w-8 h-8 text-green-600 dark:text-green-400 mt-1 flex-shrink-0" />
+                        <Icon className="w-8 h-8 text-bluelagoon-600 dark:text-bluelagoon-400 mt-1 flex-shrink-0" />
                         <div>
                           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{right.title}</h3>
                           <p className="text-gray-700 dark:text-gray-300">{right.desc}</p>
@@ -133,13 +133,13 @@ export default function CCPA() {
                   ].map((service, index) => (
                     <div
                       key={index}
-                      className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-500/20"
+                      className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-bluelagoon-500/20"
                     >
                       <h4 className="font-bold text-gray-900 dark:text-white mb-4">{service.title}</h4>
                       <ul className="space-y-2">
                         {service.items.map((item, itemIndex) => (
                           <li key={itemIndex} className="flex items-start space-x-2">
-                            <div className="w-1.5 h-1.5 bg-green-600 dark:bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                            <div className="w-1.5 h-1.5 bg-bluelagoon-600 dark:bg-bluelagoon-400 rounded-full mt-2 flex-shrink-0"></div>
                             <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
                           </li>
                         ))}
@@ -153,7 +153,7 @@ export default function CCPA() {
               <div className="mb-12">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">2. Gap Remediation</h3>
                 <div className="grid md:grid-cols-2 gap-8">
-                  <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-500/20">
+                  <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-bluelagoon-500/20">
                     <h4 className="font-bold text-gray-900 dark:text-white mb-4">Policies and Procedures</h4>
                     <ul className="space-y-2">
                       {[
@@ -168,13 +168,13 @@ export default function CCPA() {
                         "Breach Notification policy and procedures",
                       ].map((item, index) => (
                         <li key={index} className="flex items-start space-x-2">
-                          <CheckCircle className="w-4 h-4 text-green-600 dark:text-green-400 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-bluelagoon-600 dark:text-bluelagoon-400 mt-1 flex-shrink-0" />
                           <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
-                  <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-500/20">
+                  <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-bluelagoon-500/20">
                     <h4 className="font-bold text-gray-900 dark:text-white mb-4">Technical Remediation</h4>
                     <ul className="space-y-2">
                       {[
@@ -185,7 +185,7 @@ export default function CCPA() {
                         "Privacy Officer as a Service",
                       ].map((item, index) => (
                         <li key={index} className="flex items-start space-x-2">
-                          <CheckCircle className="w-4 h-4 text-green-600 dark:text-green-400 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-bluelagoon-600 dark:text-bluelagoon-400 mt-1 flex-shrink-0" />
                           <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
                         </li>
                       ))}
@@ -197,7 +197,7 @@ export default function CCPA() {
               {/* Ongoing Support */}
               <div className="mb-12">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">3. Ongoing Support</h3>
-                <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-500/20">
+                <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-bluelagoon-500/20">
                   <ul className="space-y-2">
                     {[
                       "Ongoing CCPA compliance monitoring and reporting",
@@ -206,7 +206,7 @@ export default function CCPA() {
                       "Support for data subject requests and breach notifications",
                     ].map((item, index) => (
                       <li key={index} className="flex items-start space-x-2">
-                        <CheckCircle className="w-4 h-4 text-green-600 dark:text-green-400 mt-1 flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 text-bluelagoon-600 dark:text-bluelagoon-400 mt-1 flex-shrink-0" />
                         <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
                       </li>
                     ))}
@@ -216,13 +216,13 @@ export default function CCPA() {
 
               {/* CTA Section */}
               <div className="text-center">
-                <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-green-500/20">
+                <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-bluelagoon-500/20">
                   <h2 className="text-3xl font-bold mb-4">Ready for CCPA Compliance?</h2>
                   <p className="text-xl mb-8 opacity-90">
                     Protect your business and your customers with our CCPA compliance solutions.
                   </p>
                   <Link href="/contact">
-                    <Button className="bg-white/10 dark:bg-white/10 text-green-800 hover:bg-white/20 dark:hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20 dark:border-white/20">
+                    <Button className="bg-white/10 dark:bg-white/10 text-bluelagoon-800 hover:bg-white/20 dark:hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20 dark:border-white/20">
                       Start CCPA Compliance
                     </Button>
                   </Link>

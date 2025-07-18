@@ -14,16 +14,10 @@ const footerSections = [
       { name: "Managed Security (MSSP)", href: "/services/mssp" },
       { name: "SOC as a Service", href: "/services/soc" },
       { name: "DPO as a Service", href: "/services/dpo" },
-    ],
-  },
-  {
-    title: "Solutions",
-    links: [
       { name: "GDPR Compliance", href: "/solutions/gdpr" },
       { name: "CCPA Compliance", href: "/solutions/ccpa" },
     ],
   },
-  // Removed About Us section
 ]
 
 const regions = ["Asia Pacific", "United States", "Europe, Middle East, Africa", "European Union"]
@@ -53,13 +47,13 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/auxgen/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 bg-gray-200/80 rounded-lg flex items-center justify-center hover:bg-green-500/20 hover:border-green-500/50 transition-colors duration-200 border border-gray-300/50"
+                className="w-8 h-8 bg-gray-200/80 rounded-lg flex items-center justify-center hover:bg-bluelagoon-500/20 hover:border-bluelagoon-500/50 transition-colors duration-200 border border-gray-300/50"
               >
                 <Linkedin className="w-4 h-4" />
               </Link>
               <Link
                 href="mailto:sales@auxgens.net"
-                className="w-8 h-8 bg-gray-200/80 rounded-lg flex items-center justify-center hover:bg-green-500/20 hover:border-green-500/50 transition-colors duration-200 border border-gray-300/50"
+                className="w-8 h-8 bg-gray-200/80 rounded-lg flex items-center justify-center hover:bg-bluelagoon-500/20 hover:border-bluelagoon-500/50 transition-colors duration-200 border border-gray-300/50"
               >
                 <Mail className="w-4 h-4" />
               </Link>
@@ -73,37 +67,24 @@ export default function Footer() {
               <h3 className="font-bold text-base mb-2 text-gray-900">Services</h3>
               <div className="grid grid-cols-2 gap-x-6">
                 <ul className="space-y-1">
-                  {footerSections[0].links.slice(0, 3).map((link) => (
+                  {footerSections[0].links.slice(0, 4).map((link) => (
                     <li key={link.name}>
-                      <Link href={link.href} className="text-gray-600 hover:text-green-600 transition-colors duration-200 text-sm">
+                      <Link href={link.href} className="text-gray-600 hover:text-bluelagoon-600 transition-colors duration-200 text-sm">
                         {link.name}
                       </Link>
                     </li>
                   ))}
                 </ul>
                 <ul className="space-y-1">
-                  {footerSections[0].links.slice(3).map((link) => (
+                  {footerSections[0].links.slice(4).map((link) => (
                     <li key={link.name}>
-                      <Link href={link.href} className="text-gray-600 hover:text-green-600 transition-colors duration-200 text-sm">
+                      <Link href={link.href} className="text-gray-600 hover:text-bluelagoon-600 transition-colors duration-200 text-sm">
                         {link.name}
                       </Link>
                     </li>
                   ))}
                 </ul>
               </div>
-            </div>
-            {/* Solutions: single column */}
-            <div className="mb-0">
-              <h3 className="font-bold text-base mb-2 text-gray-900">Solutions</h3>
-              <ul className="space-y-1">
-                {footerSections[1].links.map((link) => (
-                  <li key={link.name}>
-                    <Link href={link.href} className="text-gray-600 hover:text-green-600 transition-colors duration-200 text-sm">
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>
@@ -112,15 +93,15 @@ export default function Footer() {
         <div className="border-t border-gray-200/50 mt-2 pt-2 flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-wrap items-center space-x-2 text-xs">
             <div className="flex items-center space-x-1">
-              <Mail className="w-4 h-4 text-green-600" />
+              <Mail className="w-4 h-4 text-bluelagoon-600" />
               <span className="text-gray-600">sales@auxgens.net</span>
             </div>
             <div className="flex items-center space-x-1 ml-3">
-              <MapPin className="w-4 h-4 text-green-600" />
+              <MapPin className="w-4 h-4 text-bluelagoon-600" />
               <span className="text-gray-600">C3834, Brigade Meadows, Udayapura, Bengaluru 560082.</span>
             </div>
             <div className="flex items-center space-x-1 ml-3">
-              <MapPin className="w-4 h-4 text-green-600" />
+              <MapPin className="w-4 h-4 text-bluelagoon-600" />
               <span className="text-gray-600">17710, 35th Dr Se Bothell, WA 98012</span>
             </div>
           </div>

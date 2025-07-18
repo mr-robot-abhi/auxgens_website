@@ -121,8 +121,8 @@ export default function ParticleBackground() {
         ctx.moveTo(connection.x1, connection.y1)
         ctx.lineTo(connection.x2, connection.y2)
         ctx.strokeStyle = isDark
-          ? `rgba(34, 197, 94, ${connection.opacity})`
-          : `rgba(34, 197, 94, ${Math.max(connection.opacity * 2.5, 0.12)})` // more visible in light mode
+          ? `rgba(0, 149, 182, ${connection.opacity})` // Blue Lagoon
+          : `rgba(0, 149, 182, ${Math.max(connection.opacity * 2.5, 0.12)})` // Blue Lagoon, more visible in light mode
         ctx.lineWidth = isDark ? 0.5 : 1.1 // thicker in light mode
         ctx.stroke()
       })
@@ -131,13 +131,13 @@ export default function ParticleBackground() {
       particlesRef.current.forEach((particle) => {
         ctx.beginPath()
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(34, 197, 94, ${particle.opacity})`
+        ctx.fillStyle = `rgba(0, 149, 182, ${particle.opacity})` // Blue Lagoon
         ctx.fill()
 
         // Add subtle glow
         ctx.beginPath()
         ctx.arc(particle.x, particle.y, particle.size * 2, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(34, 197, 94, ${particle.opacity * 0.1})`
+        ctx.fillStyle = `rgba(0, 149, 182, ${particle.opacity * 0.1})` // Blue Lagoon
         ctx.fill()
       })
     }

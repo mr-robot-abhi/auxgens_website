@@ -26,7 +26,7 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#16a34a",
+          DEFAULT: "#0095B6", // Blue Lagoon
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -53,17 +53,17 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        green: {
-          50: "#f0fdf4",
-          100: "#dcfce7",
-          200: "#bbf7d0",
-          300: "#86efac",
-          400: "#4ade80",
-          500: "#22c55e",
-          600: "#16a34a",
-          700: "#15803d",
-          800: "#166534",
-          900: "#14532d",
+        bluelagoon: {
+          50: "#e0f7fa",
+          100: "#b2ebf2",
+          200: "#80deea",
+          300: "#4dd0e1",
+          400: "#26c6da",
+          500: "#0095B6", // Blue Lagoon main
+          600: "#00849e",
+          700: "#007387",
+          800: "#006370",
+          900: "#00525a",
         },
       },
       borderRadius: {

@@ -13,7 +13,7 @@ export default function GRCVisuals() {
         transition={{ duration: 0.8 }}
         className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-7xl mx-auto"
       >
-        <div className="bg-green-100/80 dark:bg-green-900/40 p-6 rounded-2xl shadow-md border border-green-200/50 dark:border-green-800/50 backdrop-blur-sm">
+        <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 p-6 rounded-2xl shadow-md border border-bluelagoon-200/50 dark:border-bluelagoon-800/50 backdrop-blur-sm">
           <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Our Service</h3>
           <ul className="space-y-3 text-sm">
             {[
@@ -24,7 +24,7 @@ export default function GRCVisuals() {
               { icon: Smartphone, text: "Applications" },
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                <item.icon className="w-4 h-4 text-green-600 dark:text-green-400" />
+                <item.icon className="w-4 h-4 text-bluelagoon-600 dark:text-bluelagoon-400" />
                 {item.text}
               </li>
             ))}
@@ -39,7 +39,7 @@ export default function GRCVisuals() {
             transition={{ duration: 0.6, delay: i * 0.2 }}
             className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-2xl shadow-md border-t-4 border border-gray-200/50 dark:border-gray-700/50"
             style={{
-              borderTopColor: ["#3b82f6", "#facc15", "#f97316"][i],
+              borderTopColor: ["#0095B6", "#facc15", "#f97316"][i],
             }}
           >
             <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-gray-900 dark:text-white">
@@ -109,26 +109,26 @@ export default function GRCVisuals() {
         transition={{ duration: 0.7 }}
         className="max-w-6xl mx-auto text-center"
       >
-        <h2 className="text-3xl font-bold mb-8 text-green-600 dark:text-white">Managed GRC Services</h2>
+        <h2 className="text-3xl font-bold mb-8 text-bluelagoon-600 dark:text-white">Managed GRC Services</h2>
         <div className="flex justify-between items-center gap-6 flex-wrap">
           {[
             {
               title: "Assess",
-              icon: <FileText className="w-10 h-10 text-green-600 dark:text-green-400 mx-auto mb-3" />,
+              icon: <FileText className="w-10 h-10 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-3" />,
               bg: "bg-blue-100/80 dark:bg-blue-900/40",
               border: "border-blue-200/50 dark:border-blue-800/50",
               items: ["Cyber Resilience", "Security Review", "VCISO", "Control Assurance"],
             },
             {
               title: "Transform",
-              icon: <Settings className="w-10 h-10 text-green-600 dark:text-green-400 mx-auto mb-3" />,
+              icon: <Settings className="w-10 h-10 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-3" />,
               bg: "bg-purple-100/80 dark:bg-purple-900/40",
               border: "border-purple-200/50 dark:border-purple-800/50",
               items: ["Migration", "Integration", "GRC Automation", "Framework Mapping"],
             },
             {
               title: "Manage",
-              icon: <Users className="w-10 h-10 text-green-600 dark:text-green-400 mx-auto mb-3" />,
+              icon: <Users className="w-10 h-10 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-3" />,
               bg: "bg-green-100/80 dark:bg-green-900/40",
               border: "border-green-200/50 dark:border-green-800/50",
               items: ["Monitoring", "Continuous Improvement", "Risk Mitigation", "Policy Enforcement"],
@@ -159,7 +159,7 @@ export default function GRCVisuals() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-12 bg-gradient-to-r from-green-600/90 to-green-700/90 backdrop-blur-sm text-white p-6 rounded-2xl"
+          className="mt-12 bg-gradient-to-r from-bluelagoon-600/90 to-bluelagoon-700/90 backdrop-blur-sm text-white p-6 rounded-2xl"
         >
           <h3 className="text-xl font-bold mb-2">Regulatory Compliance & Continuous Improvement</h3>
           <p className="text-lg opacity-90">Managed GRC Services - Archer, Alyne</p>

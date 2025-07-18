@@ -13,9 +13,6 @@ const services = [
   { name: "Managed Security (MSSP)", href: "/services/mssp" },
   { name: "SOC as a Service", href: "/services/soc" },
   { name: "DPO as a Service", href: "/services/dpo" },
-]
-
-const solutions = [
   { name: "GDPR Compliance", href: "/solutions/gdpr" },
   { name: "CCPA Compliance", href: "/solutions/ccpa" },
 ]
@@ -24,7 +21,6 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
-  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,16 +64,16 @@ export default function Header() {
                 {/* Home */}
                 <Link
                   href="/"
-                  className="text-gray-600 hover:text-green-500 font-medium transition-colors duration-200 relative group"
+                  className="text-gray-600 hover:text-bluelagoon-500 font-medium transition-colors duration-200 relative group"
                 >
                   Home
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-bluelagoon-500 transition-all duration-300 group-hover:w-full"></span>
                 </Link>
 
                 {/* Services Dropdown */}
                 <div className="relative group">
                   <button
-                    className="flex items-center text-gray-600 hover:text-green-500 font-medium transition-colors duration-200"
+                    className="flex items-center text-gray-600 hover:text-bluelagoon-500 font-medium transition-colors duration-200"
                     onMouseEnter={() => setIsServicesOpen(true)}
                     onMouseLeave={() => setIsServicesOpen(false)}
                   >
@@ -95,38 +91,9 @@ export default function Header() {
                       <Link
                         key={service.name}
                         href={service.href}
-                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-green-500/10 hover:text-green-600 transition-colors duration-200"
+                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-bluelagoon-500/10 hover:text-bluelagoon-600 transition-colors duration-200"
                       >
                         {service.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Solutions Dropdown */}
-                <div className="relative group">
-                  <button
-                    className="flex items-center text-gray-600 hover:text-green-500 font-medium transition-colors duration-200"
-                    onMouseEnter={() => setIsSolutionsOpen(true)}
-                    onMouseLeave={() => setIsSolutionsOpen(false)}
-                  >
-                    Solutions
-                    <ChevronDown className="ml-1 h-4 w-4" />
-                  </button>
-                  <div
-                    className={`absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-md rounded-lg shadow-lg border border-gray-200 transition-all duration-200 ${
-                      isSolutionsOpen ? "opacity-100 visible" : "opacity-0 invisible"
-                    }`}
-                    onMouseEnter={() => setIsSolutionsOpen(true)}
-                    onMouseLeave={() => setIsSolutionsOpen(false)}
-                  >
-                    {solutions.map((solution) => (
-                      <Link
-                        key={solution.name}
-                        href={solution.href}
-                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-green-500/10 hover:text-green-600 transition-colors duration-200"
-                      >
-                        {solution.name}
                       </Link>
                     ))}
                   </div>
@@ -136,17 +103,17 @@ export default function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-gray-600 hover:text-green-500 font-medium transition-colors duration-200 relative group"
+                    className="text-gray-600 hover:text-bluelagoon-500 font-medium transition-colors duration-200 relative group"
                   >
                     {item.name}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-bluelagoon-500 transition-all duration-300 group-hover:w-full"></span>
                   </Link>
                 ))}
               </nav>
 
               {/* CTA Button */}
               <Link href="/contact">
-                <Button className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-6 py-2 rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:shadow-green-500/25 hover:scale-105 border border-green-500/20">
+                <Button className="bg-gradient-to-r from-bluelagoon-600 to-bluelagoon-500 hover:from-bluelagoon-700 hover:to-bluelagoon-600 text-white px-6 py-2 rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:shadow-bluelagoon-500/25 hover:scale-105 border border-bluelagoon-500/20">
                   Get Started
                 </Button>
               </Link>
@@ -174,23 +141,10 @@ export default function Header() {
                   <Link
                     key={service.name}
                     href={service.href}
-                    className="block pl-4 text-gray-600 hover:text-green-500 transition-colors duration-200"
+                    className="block pl-4 text-gray-600 hover:text-bluelagoon-500 transition-colors duration-200"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {service.name}
-                  </Link>
-                ))}
-              </div>
-              <div className="space-y-2">
-                <p className="font-semibold text-gray-800 px-2">Solutions</p>
-                {solutions.map((solution) => (
-                  <Link
-                    key={solution.name}
-                    href={solution.href}
-                    className="block pl-4 text-gray-600 hover:text-green-500 transition-colors duration-200"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {solution.name}
                   </Link>
                 ))}
               </div>
@@ -198,14 +152,14 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block text-gray-600 hover:text-green-500 font-medium transition-colors duration-200"
+                  className="block text-gray-600 hover:text-bluelagoon-500 font-medium transition-colors duration-200"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
               <Link href="/contact">
-                <Button className="w-full bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white py-2 rounded-lg font-medium transition-all duration-200">
+                <Button className="w-full bg-gradient-to-r from-bluelagoon-600 to-bluelagoon-500 hover:from-bluelagoon-700 hover:to-bluelagoon-600 text-white py-2 rounded-lg font-medium transition-all duration-200">
                   Get Started
                 </Button>
               </Link>

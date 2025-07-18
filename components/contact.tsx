@@ -101,7 +101,6 @@ export default function Contact() {
                     <SelectItem value="dpo">DPO as a Service</SelectItem>
                     <SelectItem value="gdpr">GDPR Compliance</SelectItem>
                     <SelectItem value="ccpa">CCPA Compliance</SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -123,7 +122,7 @@ export default function Contact() {
 
               <Button
                 type="submit"
-                className="w-full bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white py-3 rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:shadow-green-500/25"
+                className="w-full bg-gradient-to-r from-bluelagoon-600 to-bluelagoon-500 hover:from-bluelagoon-700 hover:to-bluelagoon-600 text-white py-3 rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:shadow-bluelagoon-500/25"
               >
                 Send Message
               </Button>

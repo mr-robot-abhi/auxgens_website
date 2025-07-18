@@ -77,7 +77,7 @@ export default function ServiceFlowcharts() {
 
             {/* Main Pillars */}
             <div className="grid md:grid-cols-4 gap-6 mb-8">
-              <div className="bg-green-500 text-white p-6 rounded-lg text-center">
+              <div className="bg-bluelagoon-500 text-white p-6 rounded-lg text-center">
                 <Settings className="w-12 h-12 mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">Our Service</h3>
               </div>
@@ -123,7 +123,7 @@ export default function ServiceFlowcharts() {
           >
             {/* Service Areas */}
             <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <div className="bg-green-600 text-white p-6 rounded-lg">
+              <div className="bg-bluelagoon-600 text-white p-6 rounded-lg">
                 <h3 className="text-xl font-bold mb-4">Risk Assurance</h3>
                 <ul className="space-y-2 text-sm">
                   <li>• Cyber Resilience</li>
@@ -134,7 +134,7 @@ export default function ServiceFlowcharts() {
                   <li>• Cloud Security</li>
                 </ul>
               </div>
-              <div className="bg-green-600 text-white p-6 rounded-lg">
+              <div className="bg-bluelagoon-600 text-white p-6 rounded-lg">
                 <h3 className="text-xl font-bold mb-4">Compliance Management</h3>
                 <ul className="space-y-2 text-sm">
                   <li>• ISO 27001/NIST Compliance</li>
@@ -145,7 +145,7 @@ export default function ServiceFlowcharts() {
                   <li>• SSAE 18 / ISAE 3402 / SOC 2</li>
                 </ul>
               </div>
-              <div className="bg-green-600 text-white p-6 rounded-lg">
+              <div className="bg-bluelagoon-600 text-white p-6 rounded-lg">
                 <h3 className="text-xl font-bold mb-4">Automation & Transformation</h3>
                 <ul className="space-y-2 text-sm">
                   <li>• Alyne, Archer, MetricStream</li>
@@ -161,23 +161,23 @@ export default function ServiceFlowcharts() {
             {/* Process Flow */}
             <div className="flex justify-center items-center space-x-8 mb-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-2">
+                <div className="w-16 h-16 bg-bluelagoon-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-2">
                   1
                 </div>
                 <h4 className="font-bold text-gray-900 dark:text-white">Assess</h4>
                 <p className="text-sm text-gray-600 dark:text-gray-300">Evaluate current state</p>
               </div>
-              <ArrowRight className="text-green-600 w-8 h-8" />
+              <ArrowRight className="text-bluelagoon-600 w-8 h-8" />
               <div className="text-center">
-                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-2">
+                <div className="w-16 h-16 bg-bluelagoon-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-2">
                   2
                 </div>
                 <h4 className="font-bold text-gray-900 dark:text-white">Transform</h4>
                 <p className="text-sm text-gray-600 dark:text-gray-300">Implement solutions</p>
               </div>
-              <ArrowRight className="text-green-600 w-8 h-8" />
+              <ArrowRight className="text-bluelagoon-600 w-8 h-8" />
               <div className="text-center">
-                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-2">
+                <div className="w-16 h-16 bg-bluelagoon-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-2">
                   3
                 </div>
                 <h4 className="font-bold text-gray-900 dark:text-white">Manage</h4>
@@ -186,7 +186,7 @@ export default function ServiceFlowcharts() {
             </div>
 
             {/* Bottom Banner */}
-            <div className="bg-gradient-to-r from-green-600 to-green-700 text-white p-6 rounded-lg text-center">
+            <div className="bg-gradient-to-r from-bluelagoon-600 to-bluelagoon-700 text-white p-6 rounded-lg text-center">
               <h3 className="text-xl font-bold mb-2">Regulatory Compliance & Continuous Improvement</h3>
               <p className="text-lg">Managed GRC Services - Archer, Alyne</p>
             </div>

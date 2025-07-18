@@ -27,7 +27,7 @@ export default function CyberGrid() {
       const isDark = document.documentElement.classList.contains("dark")
 
       // Draw grid
-      ctx.strokeStyle = isDark ? "rgba(34, 197, 94, 0.1)" : "rgba(34, 197, 94, 0.08)"
+      ctx.strokeStyle = isDark ? "rgba(0, 149, 182, 0.1)" : "rgba(0, 149, 182, 0.08)" // Blue Lagoon
       ctx.lineWidth = 0.5
 
       // Vertical lines
@@ -51,7 +51,7 @@ export default function CyberGrid() {
       const scanLine2 = (Math.cos(time * 0.0008) * 0.5 + 0.5) * canvas.width
 
       // Horizontal scan line
-      ctx.strokeStyle = isDark ? "rgba(34, 197, 94, 0.3)" : "rgba(34, 197, 94, 0.2)"
+      ctx.strokeStyle = isDark ? "rgba(0, 149, 182, 0.3)" : "rgba(0, 149, 182, 0.2)" // Blue Lagoon
       ctx.lineWidth = 1
       ctx.beginPath()
       ctx.moveTo(0, scanLine1)

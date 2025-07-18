@@ -6,12 +6,12 @@ import { Shield, Server, Eye, FileCheck, Scale, Lock, ChevronRight } from "lucid
 import { motion, useAnimation } from "framer-motion"
 
 const items = [
-  { id: "grc", name: "GRC Services", description: "Governance, Risk & Compliance", icon: Scale, href: "/services/grc", color: "from-blue-500 to-blue-600" },
+  { id: "grc", name: "GRC Services", description: "Governance, Risk & Compliance", icon: Scale, href: "/services/grc", color: "from-bluelagoon-500 to-bluelagoon-600" },
   { id: "vciso", name: "vCISO", description: "Virtual CISO Services", icon: Shield, href: "/services/virtual-ciso", color: "from-purple-500 to-purple-600" },
   { id: "ccpa", name: "CCPA", description: "California Privacy Act", icon: Shield, href: "/solutions/ccpa", color: "from-teal-500 to-teal-600" },
   { id: "dpo", name: "DPO Service", description: "Data Protection Officer", icon: FileCheck, href: "/services/dpo", color: "from-indigo-500 to-indigo-600" },
   { id: "soc", name: "SOC Service", description: "24/7 Security Operations", icon: Eye, href: "/services/soc", color: "from-cyan-500 to-cyan-600" },
-  { id: "gdpr", name: "GDPR", description: "EU Data Protection", icon: FileCheck, href: "/solutions/gdpr", color: "from-green-500 to-green-600" },
+  { id: "gdpr", name: "GDPR", description: "EU Data Protection", icon: FileCheck, href: "/solutions/gdpr", color: "from-bluelagoon-500 to-bluelagoon-600" },
   { id: "cybersecurity", name: "Cybersecurity", description: "Data Protection", icon: Lock, href: "/services/cybersecurity", color: "from-red-500 to-red-600" },
   { id: "mssp", name: "MSSP", description: "Managed Security Services", icon: Server, href: "/services/mssp", color: "from-orange-500 to-orange-600" },
 ]
@@ -90,7 +90,7 @@ export default function PlatformEcosystem() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Auxgens <span className="text-green-600 dark:text-green-400">Cybersecurity Platform</span>
+              Auxgens <span className="text-bluelagoon-600 dark:text-bluelagoon-400">Cybersecurity Platform</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Explore our sophisticated ecosystem of cybersecurity services and solutions, now in a dynamic, animated gallery.
@@ -106,7 +106,7 @@ export default function PlatformEcosystem() {
                   <motion.div
                     key={i}
                     ref={ref}
-                    className="group relative min-w-[260px] max-w-[260px] h-56 mx-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 rounded-2xl shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:border-green-500/60 dark:hover:border-green-400/60 hover:shadow-green-500/10 dark:hover:shadow-green-400/10 cursor-pointer"
+                    className="group relative min-w-[260px] max-w-[260px] h-56 mx-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 rounded-2xl shadow-xl flex flex-col items-center justify-center transition-all duration-300 hover:border-bluelagoon-500/60 dark:hover:border-bluelagoon-400/60 hover:shadow-bluelagoon-500/10 dark:hover:shadow-bluelagoon-400/10 cursor-pointer"
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: (i % items.length) * 0.08, type: "spring", stiffness: 120, damping: 18 }}
@@ -117,7 +117,7 @@ export default function PlatformEcosystem() {
                     </div>
                     <h4 className="font-semibold text-lg text-gray-900 dark:text-white mb-1 text-center">{item.name}</h4>
                     <p className="text-gray-600 dark:text-gray-300 text-sm text-center mb-4">{item.description}</p>
-                    <Link href={item.href} className="inline-flex items-center text-green-600 dark:text-green-400 font-medium text-sm group-hover:underline">
+                    <Link href={item.href} className="inline-flex items-center text-bluelagoon-600 dark:text-bluelagoon-400 font-medium text-sm group-hover:underline">
                       {item.href.includes('/solutions/') ? 'Explore' : 'Learn More'}
                       <ChevronRight className="w-4 h-4 ml-1" />
                     </Link>
@@ -129,7 +129,7 @@ export default function PlatformEcosystem() {
           </div>
           <div className="text-center mt-16">
             <Link href="/contact">
-              <button className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:shadow-green-500/25">
+              <button className="bg-gradient-to-r from-bluelagoon-600 to-bluelagoon-500 hover:from-bluelagoon-700 hover:to-bluelagoon-600 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:shadow-bluelagoon-500/25">
                 Start Your Security Journey
               </button>
             </Link>

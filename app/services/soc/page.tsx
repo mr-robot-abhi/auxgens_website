@@ -24,7 +24,7 @@ export default function SOCService() {
 
             {/* What is SOC */}
             <div className="mb-20">
-              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-12 rounded-2xl border border-green-200/50 dark:border-green-800/50">
+              <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-12 rounded-2xl border border-bluelagoon-200/50 dark:border-bluelagoon-800/50">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
                   What is a Security Operations Centre?
                 </h2>
@@ -52,9 +52,9 @@ export default function SOCService() {
                   return (
                     <div
                       key={index}
-                      className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-200/50 dark:border-green-800/50 hover:shadow-xl hover:shadow-green-500/10 transition-all duration-300"
+                      className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-bluelagoon-200/50 dark:border-bluelagoon-800/50 hover:shadow-xl hover:shadow-bluelagoon-500/10 transition-all duration-300"
                     >
-                      <Icon className="w-12 h-12 text-green-600 dark:text-green-400 mb-4" />
+                      <Icon className="w-12 h-12 text-bluelagoon-600 dark:text-bluelagoon-400 mb-4" />
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{service.title}</h3>
                       <p className="text-gray-700 dark:text-gray-300">{service.desc}</p>
                     </div>
@@ -93,10 +93,10 @@ export default function SOCService() {
                   return (
                     <div
                       key={index}
-                      className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-green-200/50 dark:border-green-800/50"
+                      className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-bluelagoon-200/50 dark:border-bluelagoon-800/50"
                     >
                       <div className="flex items-start space-x-6">
-                        <Icon className="w-12 h-12 text-green-600 dark:text-green-400 mt-1 flex-shrink-0" />
+                        <Icon className="w-12 h-12 text-bluelagoon-600 dark:text-bluelagoon-400 mt-1 flex-shrink-0" />
                         <div>
                           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{benefit.title}</h3>
                           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{benefit.desc}</p>
@@ -122,9 +122,9 @@ export default function SOCService() {
                   return (
                     <div
                       key={index}
-                      className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-6 rounded-xl text-center border border-green-200/50 dark:border-green-800/50"
+                      className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-6 rounded-xl text-center border border-bluelagoon-200/50 dark:border-bluelagoon-800/50"
                     >
-                      <Icon className="w-12 h-12 text-green-600 dark:text-green-400 mx-auto mb-4" />
+                      <Icon className="w-12 h-12 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-4" />
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">{feature.title}</h3>
                       <p className="text-gray-700 dark:text-gray-300 text-sm">{feature.desc}</p>
                     </div>
@@ -135,13 +135,13 @@ export default function SOCService() {
 
             {/* CTA Section */}
             <div className="text-center">
-              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-green-200/50 dark:border-green-800/50">
+              <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-bluelagoon-200/50 dark:border-bluelagoon-800/50">
                 <h2 className="text-3xl font-bold mb-4">Ready for 24/7 Security Operations?</h2>
                 <p className="text-xl mb-8 opacity-90">
                   Get enterprise-grade security operations without the overhead of building your own SOC.
                 </p>
                 <Link href="/contact">
-                  <Button className="bg-white/10 text-green-800 hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20">
+                  <Button className="bg-white/10 text-bluelagoon-800 hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20">
                     Start SOC Service
                   </Button>
                 </Link>

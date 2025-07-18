@@ -25,7 +25,7 @@ export default function GDPR() {
 
             {/* GDPR Overview */}
             <div className="mb-20">
-              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-12 rounded-2xl border border-green-500/20">
+              <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-12 rounded-2xl border border-bluelagoon-500/20">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">Understanding GDPR</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
@@ -54,7 +54,7 @@ export default function GDPR() {
                         "Accountability",
                       ].map((principle, index) => (
                         <li key={index} className="flex items-start space-x-3">
-                          <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-5 h-5 text-bluelagoon-600 dark:text-bluelagoon-400 mt-1 flex-shrink-0" />
                           <span className="text-gray-700 dark:text-gray-300">{principle}</span>
                         </li>
                       ))}
@@ -133,7 +133,7 @@ export default function GDPR() {
                       key={index}
                       className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50 text-center"
                     >
-                      <Icon className="w-12 h-12 text-green-600 dark:text-green-400 mx-auto mb-4" />
+                      <Icon className="w-12 h-12 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-4" />
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">{right.title}</h3>
                       <p className="text-gray-700 dark:text-gray-300 text-sm">{right.desc}</p>
                     </div>
@@ -184,9 +184,9 @@ export default function GDPR() {
                   return (
                     <div
                       key={index}
-                      className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50 hover:shadow-xl hover:shadow-green-500/10 transition-all duration-300"
+                      className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50 hover:shadow-xl hover:shadow-bluelagoon-500/10 transition-all duration-300"
                     >
-                      <Icon className="w-12 h-12 text-green-600 dark:text-green-400 mb-4" />
+                      <Icon className="w-12 h-12 text-bluelagoon-600 dark:text-bluelagoon-400 mb-4" />
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{service.title}</h3>
                       <p className="text-gray-700 dark:text-gray-300">{service.desc}</p>
                     </div>
@@ -254,13 +254,13 @@ export default function GDPR() {
                 ].map((area, index) => (
                   <div
                     key={index}
-                    className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-green-500/20"
+                    className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-bluelagoon-500/20"
                   >
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{area.title}</h3>
                     <div className="grid md:grid-cols-2 gap-4">
                       {area.items.map((item, itemIndex) => (
                         <div key={itemIndex} className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                          <div className="w-2 h-2 bg-bluelagoon-400 rounded-full mt-2 flex-shrink-0"></div>
                           <span className="text-gray-700 dark:text-gray-300">{item}</span>
                         </div>
                       ))}
@@ -272,7 +272,7 @@ export default function GDPR() {
 
             {/* Key Benefits */}
             <div className="mb-20">
-              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm p-12 rounded-2xl border border-green-500/20">
+              <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-12 rounded-2xl border border-bluelagoon-500/20">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">Key Benefits of Our GDPR Services</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
@@ -310,8 +310,8 @@ export default function GDPR() {
                     },
                   ].map((benefit, index) => (
                     <div key={index} className="text-center">
-                      <div className="w-16 h-16 bg-green-600/20 dark:bg-green-600/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 border border-green-500/30">
-                        <span className="text-green-700 font-bold text-xl">{index + 1}</span>
+                      <div className="w-16 h-16 bg-bluelagoon-600/20 dark:bg-bluelagoon-600/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 border border-bluelagoon-500/30">
+                        <span className="text-bluelagoon-700 font-bold text-xl">{index + 1}</span>
                       </div>
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">{benefit.title}</h3>
                       <p className="text-gray-700 dark:text-gray-300 text-sm">{benefit.desc}</p>
@@ -351,10 +351,10 @@ export default function GDPR() {
                     key={index}
                     className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700/50 text-center"
                   >
-                    <div className="w-12 h-12 bg-green-600/20 dark:bg-green-600/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 border border-green-500/30">
-                      <span className="text-green-700 font-bold">{index + 1}</span>
+                    <div className="w-12 h-12 bg-bluelagoon-600/20 dark:bg-bluelagoon-600/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 border border-bluelagoon-500/30">
+                      <span className="text-bluelagoon-700 font-bold">{index + 1}</span>
                     </div>
-                    <h3 className="font-bold text-green-600 dark:text-green-400 mb-2">{phase.phase}</h3>
+                    <h3 className="font-bold text-bluelagoon-600 dark:text-bluelagoon-400 mb-2">{phase.phase}</h3>
                     <h4 className="font-bold text-gray-900 dark:text-white mb-2">{phase.title}</h4>
                     <p className="text-gray-700 dark:text-gray-300 text-sm">{phase.desc}</p>
                   </div>
@@ -364,7 +364,7 @@ export default function GDPR() {
 
             {/* CTA Section */}
             <div className="text-center">
-              <div className="bg-green-100/80 dark:bg-green-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-green-500/20">
+              <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-bluelagoon-500/20">
                 <h2 className="text-3xl font-bold mb-4">Ready for GDPR Compliance?</h2>
                 <p className="text-xl mb-8 opacity-90 text-gray-900 dark:text-white">
                   Ensure your organization meets GDPR requirements and protects customer data with our comprehensive
@@ -372,14 +372,14 @@ export default function GDPR() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/contact">
-                    <Button className="bg-white/10 dark:bg-white/10 text-green-800 hover:bg-white/20 dark:hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20 dark:border-white/20">
+                    <Button className="bg-white/10 dark:bg-white/10 text-bluelagoon-800 hover:bg-white/20 dark:hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20 dark:border-white/20">
                       Start GDPR Compliance
                     </Button>
                   </Link>
                   <Link href="/services/dpo">
                     <Button
                       variant="outline"
-                      className="border-white/20 text-green-800 hover:bg-white/10 dark:hover:bg-white/10 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 bg-transparent backdrop-blur-sm"
+                      className="border-white/20 text-bluelagoon-800 hover:bg-white/10 dark:hover:bg-white/10 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 bg-transparent backdrop-blur-sm"
                     >
                       Learn About DPO Services
                     </Button>
