@@ -32,7 +32,6 @@ export default function Header() {
 
   const navItems = [
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
   ]
 
   return (
@@ -113,8 +112,8 @@ export default function Header() {
 
               {/* CTA Button */}
               <Link href="/contact">
-                <Button className="bg-gradient-to-r from-bluelagoon-600 to-bluelagoon-500 hover:from-bluelagoon-700 hover:to-bluelagoon-600 text-white px-6 py-2 rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:shadow-bluelagoon-500/25 hover:scale-105 border border-bluelagoon-500/20">
-                  Get Started
+                <Button className="bg-gradient-to-r from-bluelagoon-600 to-bluelagoon-500 hover:from-bluelagoon-700 hover:to-bluelagoon-600 text-white px-6 py-2 rounded-lg font-medium text-base transition-all duration-200 hover:shadow-lg hover:shadow-bluelagoon-500/25 hover:scale-105 border border-bluelagoon-500/20">
+                  Contact
                 </Button>
               </Link>
             </div>

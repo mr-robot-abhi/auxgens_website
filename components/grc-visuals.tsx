@@ -101,6 +101,52 @@ export default function GRCVisuals() {
         </p>
       </motion.div>
 
+      {/* Benefits of Our GRC Services */}
+      <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-7xl mx-auto"
+      >
+        {[
+          {
+            title: "Enhanced Security Posture",
+            desc: "Comprehensive security controls implementation and continuous monitoring to protect against evolving threats.",
+          },
+          {
+            title: "Regulatory Compliance",
+            desc: "Ensure compliance with industry regulations and standards including ISO 27001, GDPR, HIPAA, PCI DSS, and more.",
+          },
+          {
+            title: "Risk Reduction",
+            desc: "Systematic identification and mitigation of business risks through proven risk management methodologies.",
+          },
+          {
+            title: "Operational Efficiency",
+            desc: "Streamlined processes and automated controls that improve operational efficiency while maintaining security.",
+          },
+          {
+            title: "Cost Optimization",
+            desc: "Optimized resource allocation and reduced compliance costs through efficient GRC program management.",
+          },
+          {
+            title: "Stakeholder Confidence",
+            desc: "Increased confidence from customers, partners, and regulators through demonstrated security and compliance.",
+          },
+        ].map((benefit, i) => (
+          <div
+            key={i}
+            className="bg-bluelagoon-100/90 dark:bg-bluelagoon-900/80 rounded-2xl p-8 shadow-md border border-bluelagoon-200/60 dark:border-bluelagoon-800/60 flex items-start gap-4"
+          >
+            <CheckCircle className="w-10 h-10 text-bluelagoon-600 dark:text-bluelagoon-400 flex-shrink-0 mt-1" />
+            <div>
+              <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{benefit.title}</h3>
+              <p className="text-base text-gray-800 dark:text-gray-200">{benefit.desc}</p>
+            </div>
+          </div>
+        ))}
+      </motion.section>
+
       {/* Visual 2: Risk & Compliance Transformation Flow */}
       <motion.section
         initial={{ opacity: 0, scale: 0.9 }}
@@ -115,36 +161,30 @@ export default function GRCVisuals() {
             {
               title: "Assess",
               icon: <FileText className="w-10 h-10 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-3" />,
-              bg: "bg-blue-100/80 dark:bg-blue-900/40",
-              border: "border-blue-200/50 dark:border-blue-800/50",
               items: ["Cyber Resilience", "Security Review", "VCISO", "Control Assurance"],
             },
             {
               title: "Transform",
               icon: <Settings className="w-10 h-10 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-3" />,
-              bg: "bg-purple-100/80 dark:bg-purple-900/40",
-              border: "border-purple-200/50 dark:border-purple-800/50",
               items: ["Migration", "Integration", "GRC Automation", "Framework Mapping"],
             },
             {
               title: "Manage",
               icon: <Users className="w-10 h-10 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-3" />,
-              bg: "bg-green-100/80 dark:bg-green-900/40",
-              border: "border-green-200/50 dark:border-green-800/50",
               items: ["Monitoring", "Continuous Improvement", "Risk Mitigation", "Policy Enforcement"],
             },
           ].map((stage, i) => (
             <motion.div
               key={i}
               whileHover={{ scale: 1.05 }}
-              className={`${stage.bg} ${stage.border} border p-6 rounded-2xl shadow-lg w-full sm:w-[30%] backdrop-blur-sm`}
+              className="bg-bluelagoon-100/90 dark:bg-bluelagoon-900/80 border border-bluelagoon-200/60 dark:border-bluelagoon-800/60 p-6 rounded-2xl shadow-lg w-full sm:w-[30%] backdrop-blur-sm"
             >
               <div className="flex justify-center">{stage.icon}</div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">{stage.title}</h3>
-              <ul className="text-sm space-y-2 text-gray-600 dark:text-gray-300">
+              <ul className="text-sm space-y-2 text-gray-700 dark:text-gray-200">
                 {stage.items.map((point, j) => (
                   <li key={j} className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-current rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 bg-bluelagoon-600 dark:bg-bluelagoon-400 rounded-full mt-2 flex-shrink-0"></div>
                     {point}
                   </li>
                 ))}

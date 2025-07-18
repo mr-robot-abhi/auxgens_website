@@ -302,14 +302,12 @@ export default function GRCServices() {
                 ].map((benefit, index) => (
                   <div
                     key={index}
-                    className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-bluelagoon-200/50 dark:border-bluelagoon-800/50"
+                    className="bg-bluelagoon-100/90 dark:bg-bluelagoon-900/80 rounded-2xl p-8 shadow-md border border-bluelagoon-200/60 dark:border-bluelagoon-800/60 flex items-start gap-4"
                   >
-                    <div className="flex items-start space-x-4">
-                      <CheckCircle className="w-8 h-8 text-bluelagoon-400 mt-1 flex-shrink-0" />
-                      <div>
-                        <h3 className="font-bold text-white mb-2">{benefit.title}</h3>
-                        <p className="text-gray-300">{benefit.desc}</p>
-                      </div>
+                    <CheckCircle className="w-10 h-10 text-bluelagoon-600 dark:text-bluelagoon-400 flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{benefit.title}</h3>
+                      <p className="text-base text-gray-800 dark:text-gray-200">{benefit.desc}</p>
                     </div>
                   </div>
                 ))}
