@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Mail, Phone, MapPin, Clock, Shield, Users, Award } from "lucide-react"
+import ParticleBackground from "@/components/particle-background"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -32,13 +33,17 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
+      {/* Pure white background */}
+      <div className="fixed inset-0 bg-white" />
+      {/* Particle effects */}
+      <ParticleBackground />
       <div className="relative z-10">
         <Header />
 
         {/* Hero Section */}
-        <section className="pt-32 pb-16">
+        <section className="pt-36 pb-6">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-4xl mx-auto">
+            <div className="text-center max-w-4xl mx-auto mb-0">
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">Contact Our Security Experts</h1>
               <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
                 Ready to strengthen your cybersecurity posture? Get in touch with our team of experts for personalized
@@ -50,7 +55,7 @@ export default function ContactPage() {
 
         {/* Contact Form and Info */}
         <section className="flex min-h-screen items-center justify-center bg-transparent">
-          <div className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm rounded-2xl p-10 shadow-xl border border-gray-200 dark:border-gray-700/50 w-full max-w-2xl">
+          <div className="bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-gray-200 dark:border-gray-700/50 w-full max-w-2xl">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Get Started Today</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
@@ -115,7 +120,7 @@ export default function ContactPage() {
                       </label>
                       <Select onValueChange={(value) => handleInputChange("service", value)}>
                         <SelectTrigger className="bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white">
-                          <SelectValue placeholder="Select a service or solution" />
+                          <SelectValue placeholder="Select a service" />
                         </SelectTrigger>
                         <SelectContent className="bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600">
                           <SelectItem value="grc">GRC Services</SelectItem>
@@ -126,7 +131,6 @@ export default function ContactPage() {
                           <SelectItem value="dpo">DPO as a Service</SelectItem>
                           <SelectItem value="gdpr">GDPR Compliance</SelectItem>
                           <SelectItem value="ccpa">CCPA Compliance</SelectItem>
-                          <SelectItem value="consultation">Free Consultation</SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>
@@ -149,7 +153,7 @@ export default function ContactPage() {
 
                     <Button
                       type="submit"
-                      className="w-full bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white py-3 rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:shadow-green-500/25 text-lg"
+                      className="w-full bg-bluelagoon-600 hover:bg-bluelagoon-700 text-white py-3 rounded-lg font-medium transition-all duration-200 shadow-none text-lg"
                     >
                       Send Message
                     </Button>

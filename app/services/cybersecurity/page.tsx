@@ -3,10 +3,15 @@ import Footer from "@/components/footer"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Lock, Shield, Eye, Zap, Server } from "lucide-react"
+import ParticleBackground from "@/components/particle-background"
 
 export default function Cybersecurity() {
   return (
     <div className="min-h-screen relative overflow-hidden">
+      {/* Pure white background */}
+      <div className="fixed inset-0 bg-white" />
+      {/* Particle effects */}
+      <ParticleBackground />
       <div className="relative z-10">
         <Header />
 
@@ -25,7 +30,7 @@ export default function Cybersecurity() {
             {/* Current Challenges */}
             <div className="mb-20">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">Current Cybersecurity Challenges</h2>
-              <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-8 rounded-2xl border border-bluelagoon-200/50 dark:border-bluelagoon-800/50">
+              <div className="bg-bluelagoon-50/60 dark:bg-bluelagoon-900/10 p-8 rounded-2xl border border-bluelagoon-100 dark:border-bluelagoon-800/30 max-w-4xl mx-auto">
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-center">
                   Implementing effective cybersecurity measures is particularly challenging today because there are more
                   devices than people, and attackers are becoming more innovative. In the current digital arena, where
@@ -38,22 +43,24 @@ export default function Cybersecurity() {
             {/* Our Approach */}
             <div className="mb-20">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">Our Approach</h2>
-              <div className="grid md:grid-cols-2 gap-12">
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Security Operations Centre (SOC)</h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Auxgens help our clients strengthen their Cybersecurity with our professionals supported by Security
-                    Operations Centre (SOC) to effectively identify potential cybersecurity incidents and facilitating
-                    preventive action. The SOCs help to counter Cyber threats.
-                  </p>
-                </div>
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Cyber Risk Protection Solution (CRPS)</h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    CRPS integrates automation, deep analytics and correlation across multiple domains of security with
-                    the core objective of security orchestration and automation response (SOAR). CRPS provides enhanced
-                    visibility and situational awareness across the network, endpoints and the Cloud.
-                  </p>
+              <div className="bg-white rounded-2xl p-10 shadow border border-gray-100 dark:border-gray-800 max-w-5xl mx-auto">
+                <div className="grid md:grid-cols-2 gap-12">
+                  <div className="space-y-6">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Security Operations Centre (SOC)</h3>
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                      Auxgens help our clients strengthen their Cybersecurity with our professionals supported by Security
+                      Operations Centre (SOC) to effectively identify potential cybersecurity incidents and facilitating
+                      preventive action. The SOCs help to counter Cyber threats.
+                    </p>
+                  </div>
+                  <div className="space-y-6">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Cyber Risk Protection Solution (CRPS)</h3>
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                      CRPS integrates automation, deep analytics and correlation across multiple domains of security with
+                      the core objective of security orchestration and automation response (SOAR). CRPS provides enhanced
+                      visibility and situational awareness across the network, endpoints and the Cloud.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -61,69 +68,66 @@ export default function Cybersecurity() {
             {/* Key Features */}
             <div className="mb-20">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">Key Features</h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {[
-                  { icon: Eye, title: "Threat Detection", desc: "Advanced threat detection and monitoring" },
-                  { icon: Zap, title: "Rapid Response", desc: "Quick incident response and remediation" },
-                  { icon: Server, title: "Network Security", desc: "Comprehensive network protection" },
-                  { icon: Shield, title: "Endpoint Security", desc: "Device and endpoint protection" },
-                ].map((feature, index) => {
-                  const Icon = feature.icon
-                  return (
-                    <div
-                      key={index}
-                      className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-bluelagoon-200/50 dark:border-bluelagoon-800/50 text-center"
-                    >
-                      <Icon className="w-12 h-12 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-4" />
-                      <h3 className="font-bold text-gray-900 dark:text-white mb-2">{feature.title}</h3>
-                      <p className="text-gray-700 dark:text-gray-300 text-sm">{feature.desc}</p>
-                    </div>
-                  )
-                })}
+              <div className="bg-bluelagoon-50/60 dark:bg-bluelagoon-900/10 p-8 rounded-2xl border border-bluelagoon-100 dark:border-bluelagoon-800/30 max-w-5xl mx-auto">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {[
+                    { icon: Eye, title: "Threat Detection", desc: "Advanced threat detection and monitoring" },
+                    { icon: Zap, title: "Rapid Response", desc: "Quick incident response and remediation" },
+                    { icon: Server, title: "Network Security", desc: "Comprehensive network protection" },
+                    { icon: Shield, title: "Endpoint Security", desc: "Device and endpoint protection" },
+                  ].map((feature, index) => {
+                    const Icon = feature.icon
+                    return (
+                      <div
+                        key={index}
+                        className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center border border-bluelagoon-100 dark:border-bluelagoon-800/30"
+                      >
+                        <Icon className="w-12 h-12 text-bluelagoon-600 dark:text-bluelagoon-400 mb-4" />
+                        <h3 className="font-bold text-gray-900 dark:text-white mb-2">{feature.title}</h3>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm">{feature.desc}</p>
+                      </div>
+                    )
+                  })}
+                </div>
               </div>
             </div>
 
             {/* Benefits */}
             <div className="mb-20">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">Auxgens Cybersecurity Benefits</h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                {[
-                  {
-                    title: "Integrated Threat Detection and Response",
-                    desc: "Comprehensive threat detection with automated response capabilities",
-                  },
-                  {
-                    title: "Analytics-driven Framework",
-                    desc: "Advanced analytics to contextualize security events and threats",
-                  },
-                  {
-                    title: "Tighter Integration",
-                    desc: "Integration between data, processes and products with real-time visibility",
-                  },
-                  {
-                    title: "Cost Reduction",
-                    desc: "Reduced costs in incident response and compliance management",
-                  },
-                ].map((benefit, index) => (
-                  <div
-                    key={index}
-                    className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-bluelagoon-200/50 dark:border-bluelagoon-800/50"
-                  >
-                    <div className="flex items-start space-x-4">
+              <div className="bg-white rounded-2xl p-8 shadow border border-gray-100 dark:border-gray-800 max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                  {[
+                    {
+                      title: "Integrated Threat Detection and Response",
+                      desc: "Comprehensive threat detection with automated response capabilities",
+                    },
+                    {
+                      title: "Analytics-driven Framework",
+                      desc: "Advanced analytics to contextualize security events and threats",
+                    },
+                    {
+                      title: "Tighter Integration",
+                      desc: "Integration between data, processes and products with real-time visibility",
+                    },
+                    {
+                      title: "Cost Reduction",
+                      desc: "Reduced costs in incident response and compliance management",
+                    },
+                  ].map((benefit, index) => (
+                    <div key={index} className="bg-bluelagoon-50/60 dark:bg-bluelagoon-900/10 rounded-xl shadow p-6 flex flex-col items-start gap-3 border border-bluelagoon-100 dark:border-bluelagoon-800/30">
                       <div className="w-3 h-3 bg-bluelagoon-600 dark:bg-bluelagoon-400 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h3 className="font-bold text-gray-900 dark:text-white mb-2">{benefit.title}</h3>
-                        <p className="text-gray-700 dark:text-gray-300">{benefit.desc}</p>
-                      </div>
+                      <h3 className="font-bold text-gray-900 dark:text-white mb-2">{benefit.title}</h3>
+                      <p className="text-gray-700 dark:text-gray-300">{benefit.desc}</p>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
 
             {/* CTA Section */}
             <div className="text-center">
-              <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-bluelagoon-200/50 dark:border-bluelagoon-800/50">
+              <div className="bg-bluelagoon-50/60 dark:bg-bluelagoon-900/10 text-gray-900 dark:text-white p-12 rounded-2xl border border-bluelagoon-100 dark:border-bluelagoon-800/30">
                 <h2 className="text-3xl font-bold mb-4">Strengthen Your Cybersecurity Posture</h2>
                 <p className="text-xl mb-8 opacity-90">
                   Protect your organization with our comprehensive cybersecurity solutions.

@@ -2,11 +2,16 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Shield, CheckCircle, AlertTriangle, FileText, Users, Database, Settings, Target, Eye, Zap } from "lucide-react"
+import { Shield, CheckCircle, Info, FileText, Users, Database, Settings, Target, Eye, Zap, Circle } from "lucide-react"
+import ParticleBackground from "@/components/particle-background"
 
 export default function GRCServices() {
   return (
     <div className="min-h-screen relative overflow-hidden">
+      {/* Pure white background */}
+      <div className="fixed inset-0 bg-white" />
+      {/* Particle effects */}
+      <ParticleBackground />
       <div className="relative z-10">
         <Header />
 
@@ -25,7 +30,7 @@ export default function GRCServices() {
 
             {/* What is GRC */}
             <div className="mb-20">
-              <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-12 rounded-2xl border border-bluelagoon-200/50 dark:border-bluelagoon-800/50">
+              <div className="bg-white rounded-2xl p-12 shadow border border-gray-100 dark:border-gray-800">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">Understanding GRC</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center">
@@ -37,7 +42,7 @@ export default function GRCServices() {
                     </p>
                   </div>
                   <div className="text-center">
-                    <AlertTriangle className="w-16 h-16 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-4" />
+                    <FileText className="w-16 h-16 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-4" />
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Risk</h3>
                     <p className="text-gray-700 dark:text-gray-300">
                       Identifying, assessing, and managing potential threats to organizational assets, operations, and
@@ -61,7 +66,7 @@ export default function GRCServices() {
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
                 Common GRC Challenges Organizations Face
               </h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-bluelagoon-50/60 dark:bg-bluelagoon-900/10 p-8 rounded-2xl border border-bluelagoon-100 dark:border-bluelagoon-800/30 max-w-5xl mx-auto">
                 {[
                   {
                     title: "Lack of Comprehensive GRC Framework",
@@ -99,14 +104,16 @@ export default function GRCServices() {
                     title: "Posture Visibility",
                     desc: "Limited visibility into current governance, risk, and compliance posture across the organization.",
                   },
-                ].map((challenge, index) => (
-                  <div
-                    key={index}
-                    className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-bluelagoon-200/50 dark:border-bluelagoon-800/50"
-                  >
-                    <AlertTriangle className="w-6 h-6 text-orange-600 dark:text-orange-400 mb-3" />
-                    <h3 className="font-bold text-gray-900 dark:text-white mb-2">{challenge.title}</h3>
-                    <p className="text-gray-700 dark:text-gray-300 text-sm">{challenge.desc}</p>
+                ].map((challenge, index, arr) => (
+                  <div key={index}>
+                    <div className="flex items-start gap-4 py-4">
+                      <Circle className="w-5 h-5 text-bluelagoon-600 dark:text-bluelagoon-400 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-bold text-gray-900 dark:text-white mb-1">{challenge.title}</h3>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm">{challenge.desc}</p>
+                      </div>
+                    </div>
+                    {index < arr.length - 1 && <div className="border-b border-bluelagoon-100 dark:border-bluelagoon-800/30" />}
                   </div>
                 ))}
               </div>
@@ -114,7 +121,7 @@ export default function GRCServices() {
 
             {/* How We Help */}
             <div className="mb-20">
-              <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-12 rounded-2xl border border-bluelagoon-200/50 dark:border-bluelagoon-800/50">
+              <div className="bg-white rounded-2xl p-12 shadow border border-gray-100 dark:border-gray-800">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">How Auxgens Can Help</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
@@ -147,7 +154,7 @@ export default function GRCServices() {
             {/* Our Services */}
             <div className="mb-20">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">Our Comprehensive GRC Services</h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-bluelagoon-50/60 dark:bg-bluelagoon-900/10 p-8 rounded-2xl border border-bluelagoon-100 dark:border-bluelagoon-800/30 max-w-5xl mx-auto">
                 {[
                   {
                     title: "ISO 27001 Implementation",
@@ -191,7 +198,7 @@ export default function GRCServices() {
                   },
                   {
                     title: "Enterprise Risk Management",
-                    icon: AlertTriangle,
+                    icon: FileText,
                     desc: "Comprehensive risk management programs including risk identification, assessment, and mitigation strategies.",
                   },
                   {
@@ -209,16 +216,18 @@ export default function GRCServices() {
                     icon: Zap,
                     desc: "Incident response plan development, testing, and improvement based on industry best practices.",
                   },
-                ].map((service, index) => {
+                ].map((service, index, arr) => {
                   const Icon = service.icon
                   return (
-                    <div
-                      key={index}
-                      className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-bluelagoon-200/50 dark:border-bluelagoon-800/50 text-center"
-                    >
-                      <Icon className="w-12 h-12 text-bluelagoon-600 dark:text-bluelagoon-400 mx-auto mb-4" />
-                      <h3 className="font-bold text-gray-900 dark:text-white mb-2">{service.title}</h3>
-                      <p className="text-gray-700 dark:text-gray-300 text-sm">{service.desc}</p>
+                    <div key={index}>
+                      <div className="flex items-start gap-6 py-4">
+                        <Icon className="w-10 h-10 text-bluelagoon-600 dark:text-bluelagoon-400 flex-shrink-0 mt-1" />
+                        <div>
+                          <h3 className="font-bold text-gray-900 dark:text-white mb-1 text-lg">{service.title}</h3>
+                          <p className="text-gray-700 dark:text-gray-300 text-sm">{service.desc}</p>
+                        </div>
+                      </div>
+                      {index < arr.length - 1 && <div className="border-b border-bluelagoon-100 dark:border-bluelagoon-800/30" />}
                     </div>
                   )
                 })}
@@ -273,7 +282,7 @@ export default function GRCServices() {
             {/* Benefits */}
             <div className="mb-20">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">Benefits of Our GRC Services</h2>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white rounded-2xl shadow border border-gray-100 dark:border-gray-800 p-8 max-w-4xl mx-auto">
                 {[
                   {
                     title: "Enhanced Security Posture",
@@ -299,16 +308,16 @@ export default function GRCServices() {
                     title: "Stakeholder Confidence",
                     desc: "Increased confidence from customers, partners, and regulators through demonstrated security and compliance.",
                   },
-                ].map((benefit, index) => (
-                  <div
-                    key={index}
-                    className="bg-bluelagoon-100/90 dark:bg-bluelagoon-900/80 rounded-2xl p-8 shadow-md border border-bluelagoon-200/60 dark:border-bluelagoon-800/60 flex items-start gap-4"
-                  >
-                    <CheckCircle className="w-10 h-10 text-bluelagoon-600 dark:text-bluelagoon-400 flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{benefit.title}</h3>
-                      <p className="text-base text-gray-800 dark:text-gray-200">{benefit.desc}</p>
+                ].map((benefit, index, arr) => (
+                  <div key={index}>
+                    <div className="flex items-start gap-4 py-4">
+                      <CheckCircle className="w-10 h-10 text-bluelagoon-600 dark:text-bluelagoon-400 flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{benefit.title}</h3>
+                        <p className="text-base text-gray-800 dark:text-gray-200">{benefit.desc}</p>
+                      </div>
                     </div>
+                    {index < arr.length - 1 && <div className="border-b border-gray-100 dark:border-gray-800" />}
                   </div>
                 ))}
               </div>
@@ -316,7 +325,7 @@ export default function GRCServices() {
 
             {/* CTA Section */}
             <div className="text-center">
-              <div className="bg-bluelagoon-100/80 dark:bg-bluelagoon-900/40 backdrop-blur-sm text-gray-900 dark:text-white p-12 rounded-2xl border border-bluelagoon-200/50 dark:border-bluelagoon-800/50">
+              <div className="bg-bluelagoon-50/60 dark:bg-bluelagoon-900/10 text-gray-900 dark:text-white p-12 rounded-2xl border border-bluelagoon-100 dark:border-bluelagoon-800/30">
                 <h2 className="text-3xl font-bold mb-4">Ready to Strengthen Your GRC Framework?</h2>
                 <p className="text-xl mb-8 opacity-90">
                   Let our experts help you build a comprehensive governance, risk, and compliance strategy that protects

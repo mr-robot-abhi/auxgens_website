@@ -1,10 +1,15 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Shield, Globe, Users, Award, Target, Eye, CheckCircle, Zap, Lock, Server } from "lucide-react"
+import ParticleBackground from "@/components/particle-background"
 
 export default function About() {
   return (
     <div className="min-h-screen relative overflow-hidden">
+      {/* Pure white background */}
+      <div className="fixed inset-0 bg-white" />
+      {/* Particle effects */}
+      <ParticleBackground />
       <div className="relative z-10">
         <Header />
 

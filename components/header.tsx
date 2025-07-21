@@ -48,10 +48,10 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex-shrink-0 transition-transform hover:scale-110 mt-3">
               <Image
-                src="/images/Auxgens_Logo_expnad-removebg-preview.png"
+                src="/images/Auxgens_Main.png"
                 alt="Auxgens"
-                width={140}
-                height={140}
+                width={160}
+                height={160}
                 className="object-contain h-20 w-auto lg:h-24"
                 priority
               />
@@ -71,14 +71,15 @@ export default function Header() {
 
                 {/* Services Dropdown */}
                 <div className="relative group">
-                  <button
-                    className="flex items-center text-gray-600 hover:text-bluelagoon-500 font-medium transition-colors duration-200"
+                  <Link
+                    href="/services"
+                    className="flex items-center text-gray-600 hover:text-bluelagoon-500 font-medium transition-colors duration-200 relative group"
                     onMouseEnter={() => setIsServicesOpen(true)}
                     onMouseLeave={() => setIsServicesOpen(false)}
                   >
                     Services
                     <ChevronDown className="ml-1 h-4 w-4" />
-                  </button>
+                  </Link>
                   <div
                     className={`absolute top-full left-0 mt-2 w-64 bg-white/95 backdrop-blur-md rounded-lg shadow-lg border border-gray-200 transition-all duration-200 ${
                       isServicesOpen ? "opacity-100 visible" : "opacity-0 invisible"
@@ -135,7 +136,13 @@ export default function Header() {
           >
             <div className="py-4 space-y-4 border-t border-gray-200">
               <div className="space-y-2">
-                <p className="font-semibold text-gray-800 px-2">Services</p>
+                <Link
+                  href="/services"
+                  className="block font-semibold text-gray-800 px-2 hover:text-bluelagoon-500 transition-colors duration-200"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Services
+                </Link>
                 {services.map((service) => (
                   <Link
                     key={service.name}

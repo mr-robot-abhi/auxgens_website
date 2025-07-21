@@ -17,11 +17,31 @@ export default function Contact() {
     service: "",
     message: "",
   })
+  const [loading, setLoading] = useState(false)
+  const [result, setResult] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
+    setLoading(true)
+    setResult(null)
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+      const data = await res.json()
+      if (res.ok) {
+        setResult("Your message has been sent successfully!")
+        setFormData({ name: "", email: "", company: "", service: "", message: "" })
+      } else {
+        setResult(data.message || "Failed to send message. Please try again later.")
+      }
+    } catch (err) {
+      setResult("Failed to send message. Please try again later.")
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleInputChange = (field: string, value: string) => {
@@ -90,7 +110,7 @@ export default function Contact() {
                 </label>
                 <Select onValueChange={(value) => handleInputChange("service", value)}>
                   <SelectTrigger className="bg-white/80 dark:bg-gray-800/80 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white">
-                    <SelectValue placeholder="Select a service or solution" />
+                    <SelectValue placeholder="Select a service" />
                   </SelectTrigger>
                   <SelectContent className="bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600">
                     <SelectItem value="grc">GRC Services</SelectItem>
@@ -99,8 +119,9 @@ export default function Contact() {
                     <SelectItem value="mssp">Managed Security (MSSP)</SelectItem>
                     <SelectItem value="soc">SOC as a Service</SelectItem>
                     <SelectItem value="dpo">DPO as a Service</SelectItem>
-                    <SelectItem value="gdpr">GDPR Compliance</SelectItem>
-                    <SelectItem value="ccpa">CCPA Compliance</SelectItem>
+                    <SelectItem value="other">GDPR Compliance</SelectItem>
+                    <SelectItem value="other">CCPA Compliance</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -122,10 +143,14 @@ export default function Contact() {
 
               <Button
                 type="submit"
-                className="w-full bg-gradient-to-r from-bluelagoon-600 to-bluelagoon-500 hover:from-bluelagoon-700 hover:to-bluelagoon-600 text-white py-3 rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:shadow-bluelagoon-500/25"
+                className="w-full bg-bluelagoon-600 hover:bg-bluelagoon-700 text-white py-3 rounded-lg font-medium transition-all duration-200 shadow-none"
+                disabled={loading}
               >
-                Send Message
+                {loading ? "Sending..." : "Send Message"}
               </Button>
+              {result && (
+                <div className={`text-center mt-2 font-medium ${result.includes('success') ? 'text-green-600' : 'text-red-600'}`}>{result}</div>
+              )}
             </form>
           </div>
         </div>

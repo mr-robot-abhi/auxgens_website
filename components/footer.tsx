@@ -31,10 +31,10 @@ export default function Footer() {
           <div className="flex flex-col items-start justify-center md:col-span-1">
             <div className="mb-2">
               <Image
-                src="/images/Auxgens_Logo_expnad-removebg-preview.png"
+                src="/images/Auxgens_Main.png"
                 alt="Auxgens"
-                width={140}
-                height={140}
+                width={160}
+                height={160}
                 className="object-contain h-20 w-auto lg:h-24"
               />
             </div>
@@ -69,7 +69,7 @@ export default function Footer() {
                 <ul className="space-y-1">
                   {footerSections[0].links.slice(0, 4).map((link) => (
                     <li key={link.name}>
-                      <Link href={link.href} className="text-gray-600 hover:text-bluelagoon-600 transition-colors duration-200 text-sm">
+                      <Link href={link.href} className="text-gray-600 hover:text-bluelagoon-700 hover:bg-bluelagoon-50 transition-colors duration-200 text-sm rounded px-2 py-1">
                         {link.name}
                       </Link>
                     </li>
@@ -78,7 +78,7 @@ export default function Footer() {
                 <ul className="space-y-1">
                   {footerSections[0].links.slice(4).map((link) => (
                     <li key={link.name}>
-                      <Link href={link.href} className="text-gray-600 hover:text-bluelagoon-600 transition-colors duration-200 text-sm">
+                      <Link href={link.href} className="text-gray-600 hover:text-bluelagoon-700 hover:bg-bluelagoon-50 transition-colors duration-200 text-sm rounded px-2 py-1">
                         {link.name}
                       </Link>
                     </li>
