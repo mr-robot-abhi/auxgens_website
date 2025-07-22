@@ -48,11 +48,14 @@ export default function Hero() {
             {/* Features directly below text/buttons */}
             <Features />
           </div>
-          {/* Right: Image Placeholder */}
+          {/* Right: Hero Image */}
           <div className="flex-1 flex items-center justify-center w-full max-w-xl h-[320px] lg:h-[400px] mt-8 lg:mt-0 lg:ml-24">
-            {/* Placeholder for uploaded image */}
-            <div className="w-full h-full bg-gray-100 border-2 border-dashed border-bluelagoon-200 rounded-2xl flex items-center justify-center">
-              <span className="text-bluelagoon-400 text-lg">Image coming soon...</span>
+            <div className="w-full h-full rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="/images/bg_1.jpg" 
+                alt="AUXGENS Cybersecurity Solutions"
+                className="w-full h-full object-cover object-center"
+              />
             </div>
           </div>
         </div>
