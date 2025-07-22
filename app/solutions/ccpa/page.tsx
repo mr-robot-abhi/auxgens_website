@@ -3,7 +3,6 @@ import Footer from "@/components/footer"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Shield, CheckCircle, Users, Eye } from "lucide-react"
-import ParticleBackground from "@/components/particle-background"
 
 export default function CCPA() {
   return (
@@ -11,7 +10,6 @@ export default function CCPA() {
       {/* Pure white background */}
       <div className="fixed inset-0 bg-white" />
       {/* Particle effects */}
-      <ParticleBackground />
       <div className="relative z-10">
         <Header />
 

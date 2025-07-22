@@ -9,7 +9,6 @@ import DetailedServices from "@/components/detailed-services"
 import GRCVisuals from "@/components/grc-visuals"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
-import ParticleBackground from "@/components/particle-background"
 import CyberGrid from "@/components/cyber-grid"
 import LogoCarousel from "@/components/logo-carousel"
 
@@ -40,13 +39,11 @@ export default function Home() {
       <div className="fixed inset-0 bg-white" />
 
       {/* Particle effects */}
-      <ParticleBackground />
       {/* Removed CyberGrid */}
 
       <div className="relative z-10">
         <Header />
         <Hero />
-        <Features />
         <DetailedServices />
         <LogoCarousel />
         <GRCVisuals />

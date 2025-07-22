@@ -3,7 +3,6 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Inter } from "next/font/google"
-import ParticleBackground from "@/components/particle-background"
 import CyberGrid from "@/components/cyber-grid"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -104,7 +103,6 @@ export default function RootLayout({
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(ellipse_at_center,rgba(168,85,247,0.04)_0%,transparent_60%)] dark:bg-[radial-gradient(ellipse_at_center,rgba(168,85,247,0.08)_0%,transparent_60%)]" />
             </div>
             {/* Particle and grid effects (ensure z-10 for overlays) */}
-            <ParticleBackground />
             <CyberGrid />
             <div className="relative z-10">
               {children}

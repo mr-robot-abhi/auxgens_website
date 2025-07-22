@@ -5,7 +5,6 @@ import { Shield, UserCheck, Lock, Server, Eye, FileText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import ParticleBackground from "@/components/particle-background"
 
 const services = [
   {
@@ -70,7 +69,6 @@ export default function ServicesPage() {
   return (
     <>
       <Header />
-      <ParticleBackground />
       <section className="py-20 min-h-screen bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-bluelagoon-50/60 dark:bg-bluelagoon-900/10 rounded-3xl p-10 border border-bluelagoon-100 dark:border-bluelagoon-800/30">

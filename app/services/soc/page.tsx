@@ -3,15 +3,12 @@ import Footer from "@/components/footer"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Eye, Server, Shield, Zap, TrendingUp, Users, Clock, Target } from "lucide-react"
-import ParticleBackground from "@/components/particle-background"
 
 export default function SOCService() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Pure white background */}
       <div className="fixed inset-0 bg-white" />
-      {/* Particle effects */}
-      <ParticleBackground />
       <div className="relative z-10">
         <Header />
 

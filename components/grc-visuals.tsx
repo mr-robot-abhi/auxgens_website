@@ -136,7 +136,7 @@ export default function GRCVisuals() {
         ].map((benefit, i) => (
           <div
             key={i}
-            className="bg-bluelagoon-100/90 dark:bg-bluelagoon-900/80 rounded-2xl p-8 shadow-md border border-bluelagoon-200/60 dark:border-bluelagoon-800/60 flex items-start gap-4"
+            className="bg-bluelagoon-50/80 dark:bg-bluelagoon-900/60 rounded-2xl p-8 shadow-md border border-bluelagoon-100/40 dark:border-bluelagoon-800/40 flex items-start gap-4"
           >
             <CheckCircle className="w-10 h-10 text-bluelagoon-600 dark:text-bluelagoon-400 flex-shrink-0 mt-1" />
             <div>

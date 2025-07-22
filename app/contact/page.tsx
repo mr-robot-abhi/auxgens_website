@@ -10,7 +10,6 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Mail, Phone, MapPin, Clock, Shield, Users, Award } from "lucide-react"
-import ParticleBackground from "@/components/particle-background"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -35,8 +34,6 @@ export default function ContactPage() {
     <div className="min-h-screen relative overflow-hidden">
       {/* Pure white background */}
       <div className="fixed inset-0 bg-white" />
-      {/* Particle effects */}
-      <ParticleBackground />
       <div className="relative z-10">
         <Header />
 
