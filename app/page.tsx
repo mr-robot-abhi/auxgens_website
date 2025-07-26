@@ -11,6 +11,7 @@ import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import CyberGrid from "@/components/cyber-grid"
 import LogoCarousel from "@/components/logo-carousel"
+import WhyChoose from "@/components/why-choose"
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0)
@@ -46,8 +47,7 @@ export default function Home() {
         <Hero />
         <DetailedServices />
         <LogoCarousel />
-        <GRCVisuals />
-        {/* Removed Our Locations section */}
+        <WhyChoose />
         <Contact />
         <Footer />
       </div>

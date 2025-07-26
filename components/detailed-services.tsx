@@ -65,51 +65,68 @@ const services = [
 
 export default function DetailedServices() {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="bg-bluelagoon-50 dark:bg-bluelagoon-900/40 rounded-3xl p-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-bluelagoon-600 dark:text-bluelagoon-400 mb-4">Our Services</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => {
-              const Icon = service.icon
-              return (
-                <div
-                  key={index}
-                  className="bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-xl p-6 flex flex-col h-full transition-all duration-300 hover:border-bluelagoon-500/50 dark:hover:border-bluelagoon-400/50 hover:shadow-2xl hover:shadow-bluelagoon-500/10"
-                >
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className="p-3 rounded-lg bg-gradient-to-r from-bluelagoon-600 to-bluelagoon-500">
-                      <Icon className="w-6 h-6 text-white" />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">{service.title}</h3>
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-bluelagoon-900 mb-4">
+            Comprehensive Security Solutions
+          </h2>
+          <p className="text-lg text-bluelagoon-700 max-w-3xl mx-auto">
+            Protect your business with our end-to-end security services and expertise.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {services.map((service, index) => {
+            const Icon = service.icon;
+            return (
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-bluelagoon-100 hover:border-bluelagoon-300 overflow-hidden h-full flex flex-col group"
+              >
+                <div className="p-8 flex-1 flex flex-col">
+                  <div className="w-16 h-16 bg-bluelagoon-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-bluelagoon-100 transition-all duration-300">
+                    <Icon className="w-8 h-8 text-bluelagoon-600" />
                   </div>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4 flex-grow">{service.description}</p>
-                  <ul className="space-y-2 mb-6 text-gray-500 dark:text-gray-400">
+                  <h3 className="text-xl font-semibold text-bluelagoon-900 mb-3 group-hover:text-bluelagoon-700 transition-colors">{service.title}</h3>
+                  <p className="text-bluelagoon-700 mb-6 flex-grow">{service.description}</p>
+                  
+                  <ul className="space-y-3 mb-8">
                     {service.points.map((point, i) => (
-                      <li key={i} className="flex items-center">
-                        <ChevronRight className="w-4 h-4 text-bluelagoon-600 dark:text-bluelagoon-400 mr-2 flex-shrink-0" />
-                        <span>{point}</span>
+                      <li key={i} className="flex items-start">
+                        <svg 
+                          className="h-5 w-5 text-bluelagoon-500 mt-0.5 mr-2 flex-shrink-0" 
+                          viewBox="0 0 24 24" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        >
+                          <circle cx="12" cy="12" r="10" />
+                          <path d="M9 12l2 2 4-4" />
+                        </svg>
+                        <span className="text-bluelagoon-700">{point}</span>
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-auto">
-                    <Link href={service.href}>
-                      <Button
-                        variant="outline"
-                        className="w-full border-bluelagoon-500/50 dark:border-bluelagoon-400/50 text-bluelagoon-600 dark:text-bluelagoon-400 hover:bg-bluelagoon-500/10 dark:hover:bg-bluelagoon-400/10 hover:text-bluelagoon-700 dark:hover:text-bluelagoon-300 hover:border-bluelagoon-500 dark:hover:border-bluelagoon-400"
-                      >
-                        Learn More
-                      </Button>
-                    </Link>
-                  </div>
                 </div>
-              )
-            })}
-          </div>
+                
+                <div className="px-6 pb-6 pt-2 border-t border-bluelagoon-100">
+                  <Link href={service.href}>
+                    <Button
+                      variant="outline"
+                      className="w-full border-bluelagoon-300 text-bluelagoon-700 hover:bg-bluelagoon-50 hover:border-bluelagoon-400 hover:text-bluelagoon-800 transition-colors"
+                    >
+                      Learn More
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
-  )
+  );
 }
