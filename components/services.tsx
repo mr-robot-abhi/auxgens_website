@@ -32,7 +32,7 @@ const services = [
     title: "Managed Security (MSSP)",
     description: "Security monitoring and management with specialized expertise and threat intelligence.",
     href: "/services/mssp",
-    features: ["24/7 Monitoring", "Threat Intelligence", "Incident Response"],
+    features: ["Monitoring", "Threat Intelligence", "Incident Response"],
   },
   {
     icon: Eye,

@@ -44,7 +44,7 @@ export default function ContactPage() {
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">Contact Our Security Experts</h1>
               <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
                 Ready to strengthen your cybersecurity posture? Get in touch with our team of experts for personalized
-                solutions and 24/7 support.
+                solutions and support.
               </p>
             </div>
           </div>

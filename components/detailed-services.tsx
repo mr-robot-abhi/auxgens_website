@@ -68,11 +68,12 @@ export default function DetailedServices() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-bluelagoon-900 mb-4">
-            Comprehensive Security Solutions
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+            Comprehensive Solutions for
+            <span className="block text-bluelagoon-600 mt-2">Your Business Growth</span>
           </h2>
           <p className="text-lg text-bluelagoon-700 max-w-3xl mx-auto">
-            Protect your business with our end-to-end security services and expertise.
+            We offer a full range of consulting and technology services designed to help your business thrive in today's competitive landscape. From strategy to implementation, we're your trusted partner.
           </p>
         </div>
         

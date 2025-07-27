@@ -44,7 +44,7 @@ export default function About() {
                   <div>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                       With a global presence spanning Asia Pacific, United States, Europe, Middle East, Africa, and the
-                      European Union, we provide 24/7 support and local expertise wherever our clients operate. Our
+                      European Union, we provide support and local expertise wherever our clients operate. Our
                       comprehensive approach combines cutting-edge technology with human expertise to deliver solutions
                       that not only protect against current threats but also prepare organizations for emerging security
                       challenges.
@@ -151,7 +151,7 @@ export default function About() {
                   {
                     icon: Eye,
                     title: "Security Operations",
-                    desc: "24/7 SOC services, SIEM implementation, threat hunting, and continuous security monitoring.",
+                    desc: "SOC services, SIEM implementation, threat hunting, and continuous security monitoring.",
                   },
                   {
                     icon: Users,
@@ -237,7 +237,7 @@ export default function About() {
                   <div className="flex items-start space-x-4">
                     <div className="w-2 h-2 bg-bluelagoon-400 rounded-full mt-3 flex-shrink-0"></div>
                     <div>
-                      <h3 className="font-bold text-gray-900 dark:text-white mb-2">24/7 Support</h3>
+                      <h3 className="font-bold text-gray-900 dark:text-white mb-2">Support</h3>
                       <p className="text-gray-700 dark:text-gray-300">
                         Round-the-clock monitoring and support to ensure your security posture is always maintained,
                         with rapid response times for critical incidents.
