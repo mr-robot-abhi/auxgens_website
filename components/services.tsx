@@ -30,7 +30,7 @@ const services = [
   {
     icon: Server,
     title: "Managed Security (MSSP)",
-    description: "24/7 security monitoring and management with specialized expertise and threat intelligence.",
+    description: "Security monitoring and management with specialized expertise and threat intelligence.",
     href: "/services/mssp",
     features: ["24/7 Monitoring", "Threat Intelligence", "Incident Response"],
   },

@@ -16,7 +16,7 @@ export default function WhyChoose() {
     },
     {
       icon: Clock,
-      title: "24/7 Support",
+      title: "Support",
       description: "Round-the-clock monitoring and support to ensure your business is always protected."
     },
     {
@@ -35,9 +35,6 @@ export default function WhyChoose() {
     <section className="py-20 bg-gradient-to-b from-white to-bluelagoon-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center rounded-full bg-bluelagoon-100 text-bluelagoon-800 text-xs font-semibold px-4 py-1.5 mb-4 border border-bluelagoon-200">
-            Why Choose Us
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-bluelagoon-900 mb-4">
             Why Choose AUXGENS?
           </h2>

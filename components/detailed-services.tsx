@@ -29,8 +29,8 @@ const services = [
   {
     icon: DatabaseZap,
     title: "Managed Security (MSSP)",
-    description: "24/7 security monitoring and management with specialized expertise and threat intelligence.",
-    points: ["24/7 Monitoring", "Threat Intelligence", "Incident Response"],
+    description: "Security monitoring and management with specialized expertise and threat intelligence.",
+    points: ["Monitoring", "Threat Intelligence", "Incident Response"],
     href: "/services/mssp",
   },
   {

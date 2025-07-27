@@ -10,7 +10,7 @@ const items = [
   { id: "vciso", name: "vCISO", description: "Virtual CISO Services", icon: Shield, href: "/services/virtual-ciso", color: "from-purple-500 to-purple-600" },
   { id: "ccpa", name: "CCPA", description: "California Privacy Act", icon: Shield, href: "/solutions/ccpa", color: "from-teal-500 to-teal-600" },
   { id: "dpo", name: "DPO Service", description: "Data Protection Officer", icon: FileCheck, href: "/services/dpo", color: "from-indigo-500 to-indigo-600" },
-  { id: "soc", name: "SOC Service", description: "24/7 Security Operations", icon: Eye, href: "/services/soc", color: "from-cyan-500 to-cyan-600" },
+  { id: "soc", name: "SOC Service", description: "Security Operations", icon: Eye, href: "/services/soc", color: "from-cyan-500 to-cyan-600" },
   { id: "gdpr", name: "GDPR", description: "EU Data Protection", icon: FileCheck, href: "/solutions/gdpr", color: "from-bluelagoon-500 to-bluelagoon-600" },
   { id: "cybersecurity", name: "Cybersecurity", description: "Data Protection", icon: Lock, href: "/services/cybersecurity", color: "from-red-500 to-red-600" },
   { id: "mssp", name: "MSSP", description: "Managed Security Services", icon: Server, href: "/services/mssp", color: "from-orange-500 to-orange-600" },

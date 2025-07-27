@@ -53,7 +53,7 @@ export default function MSSP() {
                     { icon: Server, title: "Firewall Management", desc: "Network security and access control" },
                     { icon: Target, title: "VPN Management", desc: "Secure remote access solutions" },
                     { icon: CheckCircle, title: "System Updates", desc: "Regular system changes and modifications" },
-                    { icon: Zap, title: "Incident Response", desc: "24/7 security incident management" },
+                    { icon: Zap, title: "Incident Response", desc: "Security incident management" },
                   ].map((service, index) => {
                     const Icon = service.icon
                     return (
@@ -79,7 +79,7 @@ export default function MSSP() {
                   {[
                     {
                       icon: Clock,
-                      title: "24/7 Threat Detection",
+                      title: "Threat Detection",
                       desc: "Round-the-clock monitoring and threat detection capabilities",
                     },
                     {
@@ -142,7 +142,7 @@ export default function MSSP() {
                   {[
                     { title: "Expert Team", desc: "Certified security professionals" },
                     { title: "Advanced Technology", desc: "Latest security tools and platforms" },
-                    { title: "Global Coverage", desc: "24/7 support across time zones" },
+                    { title: "Global Coverage", desc: "Support across time zones" },
                     { title: "Proven Results", desc: "Track record of successful implementations" },
                   ].map((feature, index) => (
                     <div key={index} className="text-center">
@@ -162,7 +162,7 @@ export default function MSSP() {
               <div className="bg-bluelagoon-50/60 dark:bg-bluelagoon-900/10 text-gray-900 dark:text-white p-12 rounded-2xl border border-bluelagoon-100 dark:border-bluelagoon-800/30">
                 <h2 className="text-3xl font-bold mb-4">Ready for Managed Security Services?</h2>
                 <p className="text-xl mb-8 opacity-90">
-                  Let our security experts protect your business 24/7 with comprehensive MSSP solutions.
+                  Let our security experts protect your business with comprehensive MSSP solutions.
                 </p>
                 <Link href="/contact">
                   <Button className="bg-white/10 text-bluelagoon-800 hover:bg-white/20 px-8 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg backdrop-blur-sm border border-white/20">

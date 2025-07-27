@@ -19,7 +19,7 @@ export default function SOCService() {
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">SOC as a Service</h1>
               <p className="text-xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 SOC-as-a-Service (SOCaaS) is a security model wherein a third-party vendor operates and maintains a
-                fully-managed SOC on a subscription basis via the cloud, providing 24/7 security monitoring and
+                fully-managed SOC on a subscription basis via the cloud, providing security monitoring and
                 response.
               </p>
             </div>
@@ -44,7 +44,7 @@ export default function SOCService() {
               <div className="bg-white rounded-2xl p-8 shadow border border-gray-100 dark:border-gray-800 max-w-5xl mx-auto">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {[
-                    { icon: Eye, title: "Network Monitoring", desc: "24/7 network traffic analysis and monitoring" },
+                    { icon: Eye, title: "Network Monitoring", desc: "Network traffic analysis and monitoring" },
                     { icon: Server, title: "Log Management", desc: "Centralized log collection and analysis" },
                     { icon: Shield, title: "Threat Detection", desc: "Advanced threat detection and intelligence" },
                     { icon: Zap, title: "Incident Response", desc: "Rapid incident investigation and response" },
@@ -116,7 +116,7 @@ export default function SOCService() {
               <div className="bg-white rounded-2xl p-8 shadow border border-gray-100 dark:border-gray-800 max-w-5xl mx-auto">
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
-                    { icon: Clock, title: "24/7 Monitoring", desc: "Round-the-clock security monitoring" },
+                    { icon: Clock, title: "Monitoring", desc: "Round-the-clock security monitoring" },
                     { icon: Zap, title: "Rapid Response", desc: "Quick incident response and remediation" },
                     { icon: Shield, title: "Advanced Analytics", desc: "AI-powered threat detection" },
                     { icon: Users, title: "Expert Team", desc: "Certified security professionals" },
@@ -140,7 +140,7 @@ export default function SOCService() {
             {/* CTA Section */}
             <div className="text-center">
               <div className="bg-bluelagoon-50/60 dark:bg-bluelagoon-900/10 text-gray-900 dark:text-white p-12 rounded-2xl border border-bluelagoon-100 dark:border-bluelagoon-800/30">
-                <h2 className="text-3xl font-bold mb-4">Ready for 24/7 Security Operations?</h2>
+                <h2 className="text-3xl font-bold mb-4">Ready for Security Operations?</h2>
                 <p className="text-xl mb-8 opacity-90">
                   Get enterprise-grade security operations without the overhead of building your own SOC.
                 </p>
