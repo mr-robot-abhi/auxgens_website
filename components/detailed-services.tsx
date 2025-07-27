@@ -89,7 +89,7 @@ export default function DetailedServices() {
                   <div className="w-16 h-16 bg-bluelagoon-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-bluelagoon-100 transition-all duration-300">
                     <Icon className="w-8 h-8 text-bluelagoon-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-bluelagoon-900 mb-3 group-hover:text-bluelagoon-700 transition-colors">{service.title}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-bluelagoon-700 transition-colors">{service.title}</h3>
                   <p className="text-bluelagoon-700 mb-6 flex-grow">{service.description}</p>
                   
                   <ul className="space-y-3 mb-8">

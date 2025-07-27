@@ -35,11 +35,11 @@ export default function WhyChoose() {
     <section className="py-20 bg-gradient-to-b from-white to-bluelagoon-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-bluelagoon-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Why Choose AUXGENS?
           </h2>
-          <p className="text-lg text-bluelagoon-700 max-w-3xl mx-auto">
-            We go beyond standard security practices to deliver exceptional value and peace of mind.
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            We combine deep industry expertise with a collaborative approach to deliver tailored solutions that meet your unique business needs.
           </p>
         </div>
 
@@ -54,8 +54,8 @@ export default function WhyChoose() {
                 <div className="w-14 h-14 bg-bluelagoon-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-bluelagoon-100 transition-all duration-300">
                   <Icon className="w-7 h-7 text-bluelagoon-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-bluelagoon-900 mb-3 group-hover:text-bluelagoon-700 transition-colors">{feature.title}</h3>
-                <p className="text-bluelagoon-700">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-bluelagoon-700 transition-colors">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
               </div>
             );
           })}
