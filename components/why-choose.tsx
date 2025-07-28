@@ -63,7 +63,7 @@ export default function WhyChoose() {
 
         <div className="mt-16 bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-bluelagoon-100">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-bluelagoon-900 mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
               Ready to secure your business with confidence?
             </h3>
             <p className="text-lg text-bluelagoon-700 mb-8 max-w-3xl mx-auto">
