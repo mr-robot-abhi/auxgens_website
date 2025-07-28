@@ -58,7 +58,7 @@ export default function Hero() {
           <div className="hidden lg:flex flex-1 items-center justify-center w-full max-w-xl h-[450px] lg:ml-8">
             <div className="w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
               <img 
-                src="/images/bg_1.jpg" 
+                src="/images/bg_1.png" 
                 alt="AUXGENS Cybersecurity Solutions"
                 className="w-full h-full object-cover object-center"
                 style={{ objectPosition: 'center 25%' }}
@@ -69,7 +69,7 @@ export default function Hero() {
           {/* Mobile Hero Image - Moved below content */}
           <div className="w-full lg:hidden h-80 sm:h-96 md:h-[32rem] mt-12 rounded-2xl overflow-hidden shadow-xl">
             <img 
-              src="/images/bg_1.jpg" 
+              src="/images/bg_1.png" 
               alt="AUXGENS Cybersecurity Solutions"
               className="w-full h-full object-cover object-center"
             />
