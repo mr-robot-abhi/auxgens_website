@@ -14,7 +14,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative pt-20 pb-12 md:pt-28 md:pb-20">
+    <section className="relative pt-32 pb-12 md:pt-40 md:pb-20">
       <div className="container mx-auto px-4 relative z-10">
         <div className={`flex flex-col lg:flex-row items-center gap-12 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           {/* Left: Text Content */}
